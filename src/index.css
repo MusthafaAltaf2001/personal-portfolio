@@ -4,6 +4,9 @@
 
 @layer components {
   .header-right-text {
-    @apply text-[#FFFFFF] px-12
+    @apply text-[#9CA3AF] px-12 text-base md:text-lg hover:text-[#FFFFFF]
+  }
+  .header-drawer-text {
+    @apply p-5 text-[#9CA3AF] hover:text-[#FFFFFF]
   }
 }
