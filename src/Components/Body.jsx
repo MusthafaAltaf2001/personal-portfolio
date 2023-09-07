@@ -4,7 +4,8 @@ import Particles from "react-tsparticles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim";
 
-const Body = () => {
+const Body = (props) => {
+
     const particlesInit = useCallback(async engine => {
         console.log(engine);
         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -17,6 +18,11 @@ const Body = () => {
     const particlesLoaded = useCallback(async container => {
         await console.log(container);
     }, []);
+
+    const scrollToSection = () => {
+        const element = document.getElementById("header")
+        element.scrollIntoView({ behavior: 'smooth' })
+    }
 
     const options = {
         background: {
@@ -111,11 +117,11 @@ const Body = () => {
                 <span className='text-[#F3F4F6] text-center pt-5 text-2xl'>
                     I'm a Software Engineer.
                 </span>
-                <div className='w-40 h-1/12 border-2 rounded-md border-[#EAB308] mt-5 px-2 py-1 text-center items-center'>
-                    <span className='text-[#EAB308]'>View My Projects</span>
+                <div className='w-40 h-1/12 border-2 rounded-md border-[#EAB308] mt-5 px-2 py-1 text-center items-center' >
+                    <span onClick={scrollToSection} className='text-[#EAB308]'>View My Projects</span>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
