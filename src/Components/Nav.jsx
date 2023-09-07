@@ -13,9 +13,6 @@ export const Nav = () => {
                     <h1 className="text-[#EAB308] text-base md:text-lg">Me.</h1>
                 </div>
                 <div className="flex flex-row justify-end items-center w-screen ml-5">
-                    <div className="hidden flex-row justify-end max-md:block">
-                        {/* <MenuIcon height={25} width={25} sx={{ color: "#9CA3AF" }} /> */}
-                    </div>
                     <div className="flex max-md:hidden">
                         <div className="flex items-center">
                             <span className="header-right-text">HOME</span>
