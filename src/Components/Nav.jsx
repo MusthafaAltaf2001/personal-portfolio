@@ -4,9 +4,19 @@ export const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
     const navRef = useRef()
 
-    const showNavBar = () => {
+    const navBarToggle = () => {
         setIsOpen(!isOpen)
         // navRef.current.classList.toggle("hidden")
+    }
+
+    const scrollToAbout = () => {
+        const element = document.getElementById("about")
+        element.scrollIntoView({ behavior: 'smooth' })
+    }
+
+    const scrollToProjects = () => {
+        const element = document.getElementById("projects")
+        element.scrollIntoView({ behavior: 'smooth' })
     }
 
     const genericHamburgerLine = `h-0.5 w-6 my-0.5 rounded-full bg-[#FFFFFF] transition ease transform duration-300 z-4`;
@@ -17,8 +27,8 @@ export const Nav = () => {
                 <div className="flex flex-row justify-center items-center w-screen">
                     <div className="flex max-md:hidden">
                         <div className="flex items-center justify-center">
-                            <span className="header-right-text">ABOUT</span>
-                            <span className="header-right-text">PROJECTS</span>
+                            <span onClick={scrollToAbout} className="header-right-text">ABOUT</span>
+                            <span onClick={scrollToProjects} className="header-right-text">PROJECTS</span>
                             <span className="header-right-text">RESUME</span>
                             <span className="header-right-text">CONTACT</span>
                         </div>
@@ -27,8 +37,8 @@ export const Nav = () => {
             </div>
             <div ref={navRef} className={`absolute left-0 top-0 w-screen h-screen bg-[#111827] z-1 ease-in-out duration-500 ${isOpen ? "translate-x-0 " : "-translate-x-full"}`}>
                 <div className="flex flex-col items-center pt-10 z-3">
-                    <a className="header-drawer-text" href="/#">ABOUT</a>
-                    <a className="header-drawer-text" href="/#">PROJECTS</a>
+                    <span onClick={() => { navBarToggle(); scrollToAbout(); }} className="header-drawer-text">ABOUT</span>
+                    <span onClick={() => { navBarToggle(); scrollToProjects(); }} className="header-drawer-text">PROJECTS</span>
                     <a className="header-drawer-text" href="/#">RESUME</a>
                     <a className="header-drawer-text" href="/#">CONTACT</a>
                 </div>
@@ -36,7 +46,7 @@ export const Nav = () => {
             <div className="z-4 absolute top-2 right-2 hidden max-md:block">
                 <button
                     className="flex flex-col h-12 w-12 rounded justify-center items-center group"
-                    onClick={showNavBar}
+                    onClick={navBarToggle}
                 >
                     <div
                         className={`${genericHamburgerLine} ${isOpen

@@ -2,6 +2,7 @@ import About from './Components/About';
 import Body from './Components/Body';
 import React from 'react';
 import { Nav } from './Components/Nav';
+import Projects from './Components/Projects';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
         <Nav />
         <div>
           <About />
-          <About />
+          <Projects />
         </div>
       </div>
     </div>
