@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.aec7344b.css",
-    "main.js": "/static/js/main.8dde1b9e.js",
+    "main.css": "/static/css/main.ccef72c4.css",
+    "main.js": "/static/js/main.1f531bad.js",
     "static/media/simp_project.png": "/static/media/simp_project.d3b06dd0649867bbc710.png",
     "static/media/reddit_clone_project.png": "/static/media/reddit_clone_project.a854514bc721b22d4e87.png",
     "static/media/vise_project.png": "/static/media/vise_project.e4edba4e43a2e979d98a.png",
@@ -12,11 +12,11 @@
     "static/media/tailwindcss_logo.svg": "/static/media/tailwindcss_logo.50fbcf516b9a3774e9a83272167059ae.svg",
     "index.html": "/index.html",
     "static/media/vuejs_logo.svg": "/static/media/vuejs_logo.c286d2da48ffbf281f407b0c4c94271f.svg",
-    "main.aec7344b.css.map": "/static/css/main.aec7344b.css.map",
-    "main.8dde1b9e.js.map": "/static/js/main.8dde1b9e.js.map"
+    "main.ccef72c4.css.map": "/static/css/main.ccef72c4.css.map",
+    "main.1f531bad.js.map": "/static/js/main.1f531bad.js.map"
   },
   "entrypoints": [
-    "static/css/main.aec7344b.css",
-    "static/js/main.8dde1b9e.js"
+    "static/css/main.ccef72c4.css",
+    "static/js/main.1f531bad.js"
   ]
 }
