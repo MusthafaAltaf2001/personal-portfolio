@@ -45,11 +45,11 @@ const Body = (props) => {
             },
             modes: {
                 push: {
-                    quantity: 4,
+                    quantity: 2,
                 },
                 repulse: {
                     distance: 200,
-                    duration: 0.4,
+                    duration: 1.0,
                 },
             },
         },
@@ -71,8 +71,8 @@ const Body = (props) => {
                     default: "bounce",
                 },
                 random: false,
-                speed: 6,
-                straight: false,
+                speed: 2,
+                straight: true,
             },
             number: {
                 density: {
