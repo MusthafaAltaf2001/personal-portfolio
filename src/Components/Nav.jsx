@@ -24,6 +24,11 @@ export const Nav = () => {
         element.scrollIntoView({ behavior: 'smooth' })
     }
 
+    const scrollToContact = () => {
+        const element = document.getElementById("footer")
+        element.scrollIntoView({ behavior: 'smooth' })
+    }
+
     const genericHamburgerLine = `h-0.5 w-6 my-0.5 rounded-full bg-[#FFFFFF] transition ease transform duration-300 z-200`;
 
     return (
@@ -34,8 +39,8 @@ export const Nav = () => {
                         <div className="flex items-center justify-center">
                             <span onClick={scrollToAbout} className="header-right-text">ABOUT</span>
                             <span onClick={scrollToProjects} className="header-right-text">PROJECTS</span>
-                            <span onClick={scrollToProjects} className="header-right-text">RESUME</span>
-                            <span className="header-right-text">CONTACT</span>
+                            <span onClick={scrollToResume} className="header-right-text">RESUME</span>
+                            <span onClick={scrollToContact} className="header-right-text">CONTACT</span>
                         </div>
                     </div>
                 </div>
@@ -45,7 +50,7 @@ export const Nav = () => {
                     <span onClick={() => { navBarToggle(); scrollToAbout(); }} className="header-drawer-text">ABOUT</span>
                     <span onClick={() => { navBarToggle(); scrollToProjects(); }} className="header-drawer-text">PROJECTS</span>
                     <span onClick={() => { navBarToggle(); scrollToResume(); }} className="header-drawer-text" href="/#">RESUME</span>
-                    <a className="header-drawer-text" href="/#">CONTACT</a>
+                    <span onClick={() => { navBarToggle(); scrollToContact(); }} className="header-drawer-text" href="/#">CONTACT</span>
                 </div>
             </div>
             <div className="z-200 absolute top-2 right-2 hidden max-md:block">
