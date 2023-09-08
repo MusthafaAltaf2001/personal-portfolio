@@ -1,7 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d6a3ed2.css",
-    "main.js": "/static/js/main.2372dbff.js",
+    "main.css": "/static/css/main.aec7344b.css",
+    "main.js": "/static/js/main.8dde1b9e.js",
+    "static/media/simp_project.png": "/static/media/simp_project.d3b06dd0649867bbc710.png",
+    "static/media/reddit_clone_project.png": "/static/media/reddit_clone_project.a854514bc721b22d4e87.png",
+    "static/media/vise_project.png": "/static/media/vise_project.e4edba4e43a2e979d98a.png",
     "static/media/nodejs_logo.svg": "/static/media/nodejs_logo.5a3a9ca294db0539884810b6e6eafedd.svg",
     "static/media/reactjs_logo.svg": "/static/media/reactjs_logo.ae62622598f39552abdcdb023e554c6f.svg",
     "static/media/git_logo.svg": "/static/media/git_logo.fd381642a8b14fec88b8d6df1ff25220.svg",
@@ -9,11 +12,11 @@
     "static/media/tailwindcss_logo.svg": "/static/media/tailwindcss_logo.50fbcf516b9a3774e9a83272167059ae.svg",
     "index.html": "/index.html",
     "static/media/vuejs_logo.svg": "/static/media/vuejs_logo.c286d2da48ffbf281f407b0c4c94271f.svg",
-    "main.5d6a3ed2.css.map": "/static/css/main.5d6a3ed2.css.map",
-    "main.2372dbff.js.map": "/static/js/main.2372dbff.js.map"
+    "main.aec7344b.css.map": "/static/css/main.aec7344b.css.map",
+    "main.8dde1b9e.js.map": "/static/js/main.8dde1b9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d6a3ed2.css",
-    "static/js/main.2372dbff.js"
+    "static/css/main.aec7344b.css",
+    "static/js/main.8dde1b9e.js"
   ]
 }
