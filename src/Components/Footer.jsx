@@ -36,13 +36,19 @@ const Footer = () => {
             </div>
             <div className='flex flex-row py-8'>
                 <div className='px-2'>
-                    <LinkedInIcon sx={{ color: '#F3F4F6' }}></LinkedInIcon>
+                    <a href='https://www.linkedin.com/in/musthafaaltaf/'>
+                        <LinkedInIcon sx={{ color: '#F3F4F6' }}></LinkedInIcon>
+                    </a>
                 </div>
                 <div className='px-2'>
-                    <GitHubIcon sx={{ color: '#F3F4F6' }}></GitHubIcon>
+                    <a href='https://github.com/MusthafaAltaf2001'>
+                        <GitHubIcon sx={{ color: '#F3F4F6' }}></GitHubIcon>
+                    </a>
                 </div>
                 <div className='px-2'>
-                    <InstagramIcon sx={{ color: '#F3F4F6' }}></InstagramIcon>
+                    <a href='https://www.instagram.com/musthafa.altaf/'>
+                        <InstagramIcon sx={{ color: '#F3F4F6' }}></InstagramIcon>
+                    </a>
                 </div>
             </div>
         </div>
