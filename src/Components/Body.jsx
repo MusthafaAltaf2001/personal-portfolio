@@ -92,15 +92,10 @@ const Body = (props) => {
             },
         },
         detectRetina: true,
-        // fullScreen: {
-        //     enable: true,
-        //     zIndex: -50
-        // }
     }
 
     return (
         <div className='h-screen'>
-            //className="top-0 right-0 fixed w-screen"
             <div className="-z-50 fixed top-0 right-0">
                 <Particles
                     id="tsparticles"
