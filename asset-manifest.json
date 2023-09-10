@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3b4819bc.css",
-    "main.js": "/static/js/main.3ba3d7bc.js",
+    "main.css": "/static/css/main.b565c4c6.css",
+    "main.js": "/static/js/main.24944143.js",
     "static/media/simp_project.png": "/static/media/simp_project.d3b06dd0649867bbc710.png",
     "static/media/reddit_clone_project.png": "/static/media/reddit_clone_project.a854514bc721b22d4e87.png",
     "static/media/vise_project.png": "/static/media/vise_project.e4edba4e43a2e979d98a.png",
@@ -12,11 +12,11 @@
     "static/media/tailwindcss_logo.svg": "/static/media/tailwindcss_logo.50fbcf516b9a3774e9a83272167059ae.svg",
     "index.html": "/index.html",
     "static/media/vuejs_logo.svg": "/static/media/vuejs_logo.c286d2da48ffbf281f407b0c4c94271f.svg",
-    "main.3b4819bc.css.map": "/static/css/main.3b4819bc.css.map",
-    "main.3ba3d7bc.js.map": "/static/js/main.3ba3d7bc.js.map"
+    "main.b565c4c6.css.map": "/static/css/main.b565c4c6.css.map",
+    "main.24944143.js.map": "/static/js/main.24944143.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b4819bc.css",
-    "static/js/main.3ba3d7bc.js"
+    "static/css/main.b565c4c6.css",
+    "static/js/main.24944143.js"
   ]
 }
