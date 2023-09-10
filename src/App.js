@@ -13,16 +13,14 @@ function App() {
   return (
     <div className="App">
       <Body />
+      <Nav />
       <div>
-        <Nav />
-        <div className="relative items-center">
-          <About />
-          <Projects />
-          <Resume />
-          <Footer />
-        </div>
+        <About />
+        <Projects />
+        <Resume />
+        <Footer />
       </div>
-    </div>
+    </div >
   );
 }
 

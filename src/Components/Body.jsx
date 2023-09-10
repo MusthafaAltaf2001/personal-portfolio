@@ -92,20 +92,24 @@ const Body = (props) => {
             },
         },
         detectRetina: true,
+        // fullScreen: {
+        //     enable: true,
+        //     zIndex: -50
+        // }
     }
 
     return (
-        <div>
-            <div className="-z-50 top-0 left-0 fixed">
+        <div className='h-screen'>
+            //className="top-0 right-0 fixed w-screen"
+            <div className="-z-50 fixed top-0 right-0">
                 <Particles
                     id="tsparticles"
-                    className='m-15'
                     init={particlesInit}
                     loaded={particlesLoaded}
                     options={options}
                 />
             </div>
-            <div className='flex flex-col items-center justify-center h-screen w-screen'>
+            <div className='flex flex-col items-center justify-center h-5/6'>
                 <div className='flex flex-row items-center justify-center text-2xl'>
                     <span className='text-[#F3F4F6] text-center text-ellipsis'>
                         Hello, I'm

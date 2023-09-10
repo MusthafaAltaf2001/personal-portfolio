@@ -6,7 +6,7 @@ import reddit_clone_project from '../Assets/reddit_clone_project.png'
 
 const Projects = () => {
     return (
-        <div id="projects" className='w-screen flex flex-col items-center pt-16 -z-25'>
+        <div id="projects" className='flex flex-col items-center pt-16 -z-25'>
             <span className="text-6xl font-bold text-[#EAB308] px-10 py-4">
                 PROJECTS
             </span>
