@@ -20,7 +20,7 @@ const Footer = () => {
         theme: "dark",
     });;
 
-    const emptyFields = () => toast.warning('Input fields cannot be left empty!', {
+    const emptyFields = () => toast.warning('Email and message fields cannot be left empty!', {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -65,7 +65,9 @@ const Footer = () => {
 
         const expressBackendURL = 'https://personal-portfolio-backend-s20c.onrender.com/sendMessage'
 
-        if (name.trim() === '' && email.trim() === '' && email.trim() === '') {
+        if (email.trim() === '') {
+            emptyFields()
+        } else if (message.trim() === '') {
             emptyFields()
         } else {
             await fetch(expressBackendURL, {
@@ -112,7 +114,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='flex flex-col pl-[10%]'>
-                    <input onChange={handleNameChange} value={name} className='bg-[#1F2937] text-[#F3F4F6] border-0 rounded p-2 w-[250px] m-2' type='text' name="myInput" placeholder='Name' />
+                    <input onChange={handleNameChange} value={name} className='bg-[#1F2937] text-[#F3F4F6] border-0 rounded p-2 w-[250px] m-2' type='text' name="myInput" placeholder='Name (Optional)' />
                     <input onChange={handleEmailChange} value={email} className='bg-[#1F2937] text-[#F3F4F6] border-0 rounded p-2 w-[250px] m-2' type='email' name="myInput" placeholder='Your email' />
                     <input onChange={handleMessageChange} value={message} className='bg-[#1F2937] text-[#F3F4F6] border-0 rounded pl-2 pt-2 pb-[120px] w-[320px] m-2 text-justify' type='text' name="myInput" placeholder='Message' />
                     <div onClick={sendMessage} className='w-40 h-1/12  rounded-md m-2 bg-[#EAB308] px-2 py-1 text-center items-center' >
