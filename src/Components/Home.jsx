@@ -6,7 +6,7 @@ import { loadSlim } from "tsparticles-slim";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import DownloadIcon from '@mui/icons-material/Download';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import Mohamed_Musthafa_Resume from '../Assets/Mohamed_Musthafa_Resume.pdf'
+
 
 const Home = () => {
 
@@ -24,7 +24,7 @@ const Home = () => {
     }, []);
 
     const scrollToSection = () => {
-        const element = document.getElementById("header")
+        const element = document.getElementById("about")
         element.scrollIntoView({ behavior: 'smooth' })
     }
 
@@ -128,7 +128,7 @@ const Home = () => {
                     </div>
                     <div className='border-2 rounded-md border-[#EAB308] text-center items-center text-2xl md:text-4xl w-[150px] md:w-[300px] m-3 p-2' >
                         <a
-                            href={Mohamed_Musthafa_Resume}
+                            href="https://drive.google.com/file/d/16FokG3XRfUYQRChcm8BKXBmWxdYWXqMo/view?usp=sharing"
                             download="Mohamed Musthafa Resume"
                             target="_blank"
                             rel="noreferrer"

@@ -2,12 +2,46 @@ import React, { useState } from 'react'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Footer = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const success = () => toast.success('Message Sent', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+    });;
+
+    const emptyFields = () => toast.warning('Input fields cannot be left empty!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+    });;
+
+    const serverError = () => toast.error('An unexpected server error occured!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+    });;
+
 
 
     const handleNameChange = (e) => {
@@ -31,25 +65,35 @@ const Footer = () => {
 
         const expressBackendURL = 'https://personal-portfolio-backend-s20c.onrender.com/sendMessage'
 
-        await fetch(expressBackendURL, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ templateParams }),
-        })
-            .then((response) => response.json())
-            .then((data) => {
-                console.log('Response from Express:', data);
+        if (name.trim() === '' || email.trim() === '' || email.trim() === '') {
+            emptyFields()
+        } else {
+            await fetch(expressBackendURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ templateParams }),
             })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
+                .then((response) => response.json())
+                .then((data) => {
+                    setName('')
+                    setEmail('')
+                    setMessage('')
+                    success()
+                    console.log('Response from Express:', data);
+                })
+                .catch((error) => {
+                    serverError()
+                    console.error('Error:', error);
+                });
+        }
+
     }
 
     return (
         <div className="flex flex-col items-center mt-5 z-400 bg-[#111827]">
-            <span id="footer" className="text-6xl font-bold text-[#EAB308] px-10 py-4">
+            <span id="footer" className="text-6xl font-bold text-[#EAB308] px-10 py-4 text-center">
                 CONTACT ME
             </span>
             <div className='flex flex-col md:flex-row mt-5 items-center justify-center '>
@@ -93,6 +137,18 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
+            />
         </div>
     )
 }
