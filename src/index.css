@@ -19,16 +19,16 @@
 
 
   .projects-div {
-    @apply flex w-[280px] flex-col backdrop-blur basis-auto bg-[#F4DED6]/20 border-0 rounded-xl p-5
+    @apply flex w-[280px] flex-col backdrop-blur basis-auto bg-[#F4DED6]/20 border-0 rounded-xl text-[#F3F4F6] p-4
+  }
+  .projects-div-heading {
+    @apply  text-xl font-bold
   }
   .projects-div-img {
-    @apply border-0 rounded-xl object-cover h-[250px] w-[300px] 
+    @apply border-0 rounded-xl object-cover h-[250px] w-[300px] py-2
   }
-  .projects-div-div-text {
-    @apply text-[#F3F4F6] text-lg font-bold
-  }
-  .projects-div-div-description {
-    @apply text-[#F3F4F6] text-sm
+  .projects-div-description {
+    @apply text-sm text-justify
   }
 }
 
