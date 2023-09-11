@@ -5,7 +5,7 @@ import SkillsList from './SkillsList'
 
 const About = () => {
     return (
-        <div id="about" className='flex flex-col items-center'>
+        <div id="about" className='flex flex-col items-center pt-16'>
             <span className="text-6xl font-bold text-[#EAB308] px-10 py-4">
                 ABOUT
             </span>
