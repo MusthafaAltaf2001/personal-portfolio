@@ -19,13 +19,13 @@
 
 
   .projects-div {
-    @apply flex w-[280px] flex-col backdrop-blur basis-auto bg-[#F4DED6]/20 border-0 rounded-xl text-[#F3F4F6] p-4
+    @apply flex w-[270px] md:w-[300px] flex-col backdrop-blur basis-auto bg-[#F4DED6]/20 border-0 rounded-xl text-[#F3F4F6] p-4
   }
   .projects-div-heading {
     @apply  text-xl font-bold
   }
   .projects-div-img {
-    @apply border-0 rounded-xl object-cover h-[250px] w-[300px] py-2
+    @apply border-0 rounded-xl object-cover h-[200px] w-[250px] py-2
   }
   .projects-div-description {
     @apply text-sm text-justify

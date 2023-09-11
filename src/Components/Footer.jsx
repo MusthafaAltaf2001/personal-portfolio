@@ -95,7 +95,7 @@ const Footer = () => {
 
     return (
         <div className="flex flex-col items-center mt-5 z-400 bg-[#111827]">
-            <span id="footer" className="text-6xl font-bold text-[#EAB308] px-10 py-4 text-center">
+            <span id="footer" className="text-5xl font-bold text-[#EAB308] px-10 py-4 text-center">
                 CONTACT ME
             </span>
             <div className='flex flex-col md:flex-row mt-5 items-center justify-center'>
