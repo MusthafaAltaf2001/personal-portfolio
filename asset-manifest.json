@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.41bee092.css",
-    "main.js": "/static/js/main.cc0c219f.js",
+    "main.css": "/static/css/main.1af9f5c9.css",
+    "main.js": "/static/js/main.ebdf32a3.js",
     "static/media/simp_project.png": "/static/media/simp_project.d3b06dd0649867bbc710.png",
     "static/media/reddit_clone_project.png": "/static/media/reddit_clone_project.a854514bc721b22d4e87.png",
     "static/media/vise_project.png": "/static/media/vise_project.e4edba4e43a2e979d98a.png",
@@ -12,11 +12,11 @@
     "static/media/tailwindcss_logo.svg": "/static/media/tailwindcss_logo.50fbcf516b9a3774e9a83272167059ae.svg",
     "index.html": "/index.html",
     "static/media/vuejs_logo.svg": "/static/media/vuejs_logo.c286d2da48ffbf281f407b0c4c94271f.svg",
-    "main.41bee092.css.map": "/static/css/main.41bee092.css.map",
-    "main.cc0c219f.js.map": "/static/js/main.cc0c219f.js.map"
+    "main.1af9f5c9.css.map": "/static/css/main.1af9f5c9.css.map",
+    "main.ebdf32a3.js.map": "/static/js/main.ebdf32a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.41bee092.css",
-    "static/js/main.cc0c219f.js"
+    "static/css/main.1af9f5c9.css",
+    "static/js/main.ebdf32a3.js"
   ]
 }
