@@ -65,7 +65,7 @@ const Footer = () => {
 
         const expressBackendURL = 'https://personal-portfolio-backend-s20c.onrender.com/sendMessage'
 
-        if (name.trim() === '' || email.trim() === '' || email.trim() === '') {
+        if (name.trim() === '' && email.trim() === '' && email.trim() === '') {
             emptyFields()
         } else {
             await fetch(expressBackendURL, {
