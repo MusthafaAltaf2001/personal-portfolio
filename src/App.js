@@ -16,9 +16,9 @@ function App() {
       <Nav />
       <div>
         <About />
-        <Projects />
-        <Resume />
-        <Footer />
+        {/* <Projects /> */}
+        {/* <Resume /> */}
+        {/* <Footer /> */}
       </div>
     </div >
   );
