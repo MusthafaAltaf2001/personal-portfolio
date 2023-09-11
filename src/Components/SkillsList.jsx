@@ -16,7 +16,7 @@ import redux_logo from '../Assets/Logos/redux_logo.svg'
 const SkillsList = () => {
     return (
         <div className="flex flex-col flex-wrap items-center text-[#F3F4F6] my-5">
-            <div className='grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4'>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
                 <div className="about-skills-div">
                     <img className="about-skills-div-img" src={javascript_logo} alt='' />
                     <span>Javascript</span>

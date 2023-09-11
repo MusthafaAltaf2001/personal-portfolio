@@ -16,8 +16,8 @@ function App() {
       <Nav />
       <div>
         <About />
-        <Projects />
-        <Footer />
+        {/* <Projects /> */}
+        {/* <Footer /> */}
       </div>
     </div >
   );

@@ -5,6 +5,7 @@ module.exports = {
   ],
   theme: {
     screens: {
+      xs: '350px', //Needed for galaxy fold devices
       sm: '480px',
       md: '768px',
       lg: '976px',
