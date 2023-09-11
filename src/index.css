@@ -11,7 +11,7 @@
   }
   
   .about-skills-div {
-    @apply flex flex-col items-center border-2 rounded-lg p-2 m-4 w-[120px] h-[120px]
+    @apply flex flex-col items-center border-2 rounded-lg p-2 m-4 w-[120px] h-[120px] text-center
   }
   .about-skills-div-img {
     @apply  border-0 rounded-lg object-cover w-[80px] h-[80px]

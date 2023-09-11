@@ -1,5 +1,5 @@
 import About from './Components/About';
-import Body from './Components/Body';
+import Home from './Components/Home';
 import React from 'react';
 import { Nav } from './Components/Nav';
 import Projects from './Components/Projects';
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <Body />
+      <Home />
       <Nav />
       <div>
         <About />

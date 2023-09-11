@@ -5,7 +5,7 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const Body = (props) => {
+const Home = () => {
 
     const particlesInit = useCallback(async engine => {
         console.log(engine);
@@ -96,7 +96,7 @@ const Body = (props) => {
     }
 
     return (
-        <div className='h-screen'>
+        <div id="home" className='h-screen'>
             <div className="-z-50 fixed top-0 right-0">
                 <Particles
                     id="tsparticles"
@@ -127,4 +127,4 @@ const Body = (props) => {
     )
 }
 
-export default Body
+export default Home

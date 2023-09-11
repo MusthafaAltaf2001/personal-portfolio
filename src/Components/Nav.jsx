@@ -9,6 +9,11 @@ export const Nav = () => {
         // navRef.current.classList.toggle("hidden")
     }
 
+    const scrollToHome = () => {
+        const element = document.getElementById("home")
+        element.scrollIntoView({ behavior: 'smooth' })
+    }
+
     const scrollToAbout = () => {
         const element = document.getElementById("about")
         element.scrollIntoView({ behavior: 'smooth' })
@@ -16,11 +21,6 @@ export const Nav = () => {
 
     const scrollToProjects = () => {
         const element = document.getElementById("projects")
-        element.scrollIntoView({ behavior: 'smooth' })
-    }
-
-    const scrollToResume = () => {
-        const element = document.getElementById("resume")
         element.scrollIntoView({ behavior: 'smooth' })
     }
 
@@ -37,9 +37,9 @@ export const Nav = () => {
                 <div className="flex flex-row justify-center items-center">
                     <div className="block max-md:hidden">
                         <div className="flex items-center justify-center">
+                            <span onClick={scrollToHome} className="header-right-text">HOME</span>
                             <span onClick={scrollToAbout} className="header-right-text">ABOUT</span>
                             <span onClick={scrollToProjects} className="header-right-text">PROJECTS</span>
-                            <span onClick={scrollToResume} className="header-right-text">RESUME</span>
                             <span onClick={scrollToContact} className="header-right-text">CONTACT</span>
                         </div>
                     </div>
@@ -47,9 +47,9 @@ export const Nav = () => {
             </div>
             <div ref={navRef} className={`absolute left-0 top-0 bg-[#111827] ease-in-out duration-500 ${isOpen ? "translate-x-0 " : "-translate-x-full"}`}>
                 <div className="flex flex-col items-center justify-center pt-10 h-screen w-screen">
+                    <span onClick={() => { navBarToggle(); scrollToHome(); }} className="header-drawer-text" href="/#">HOME</span>
                     <span onClick={() => { navBarToggle(); scrollToAbout(); }} className="header-drawer-text">ABOUT</span>
                     <span onClick={() => { navBarToggle(); scrollToProjects(); }} className="header-drawer-text">PROJECTS</span>
-                    <span onClick={() => { navBarToggle(); scrollToResume(); }} className="header-drawer-text" href="/#">RESUME</span>
                     <span onClick={() => { navBarToggle(); scrollToContact(); }} className="header-drawer-text" href="/#">CONTACT</span>
                 </div>
             </div>
