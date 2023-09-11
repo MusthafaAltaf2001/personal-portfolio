@@ -7,7 +7,7 @@
     @apply text-[#9CA3AF] px-12 text-base md:text-lg hover:text-[#FFFFFF]
   }
   .header-drawer-text {
-    @apply p-5 text-[#9CA3AF] hover:text-[#FFFFFF]
+    @apply p-12 text-[#9CA3AF] hover:text-[#FFFFFF]
   }
   .about-skills-div {
     @apply flex flex-col items-center border-2 rounded-lg p-3 m-4

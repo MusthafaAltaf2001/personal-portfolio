@@ -33,7 +33,7 @@ export const Nav = () => {
 
     return (
         <header id="header" className="sticky top-0 z-40">
-            <div className="bg-[#111827] flex h-16 md:px-[150px]">
+            <div className="bg-[#111827] flex h-16 md:px-[150px] xl:px-[450px] justify-center">
                 <div className="flex flex-row justify-center items-center">
                     <div className="block max-md:hidden">
                         <div className="flex items-center justify-center">
@@ -46,7 +46,7 @@ export const Nav = () => {
                 </div>
             </div>
             <div ref={navRef} className={`absolute left-0 top-0 bg-[#111827] ease-in-out duration-500 ${isOpen ? "translate-x-0 " : "-translate-x-full"}`}>
-                <div className="flex flex-col items-center pt-10 w-screen">
+                <div className="flex flex-col items-center justify-center pt-10 h-screen w-screen">
                     <span onClick={() => { navBarToggle(); scrollToAbout(); }} className="header-drawer-text">ABOUT</span>
                     <span onClick={() => { navBarToggle(); scrollToProjects(); }} className="header-drawer-text">PROJECTS</span>
                     <span onClick={() => { navBarToggle(); scrollToResume(); }} className="header-drawer-text" href="/#">RESUME</span>
