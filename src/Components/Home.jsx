@@ -4,6 +4,8 @@ import Particles from "react-tsparticles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import DownloadIcon from '@mui/icons-material/Download';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const Home = () => {
 
@@ -107,7 +109,7 @@ const Home = () => {
                 />
             </div>
             <div className='flex flex-col items-center justify-center h-5/6'>
-                <div className='flex flex-row items-center justify-center text-2xl sm:text-4xl md:text-6xl'>
+                <div className='flex flex-row items-center justify-center text-2xl md:text-6xl'>
                     <span className='text-[#F3F4F6] text-center text-ellipsis'>
                         Hello, I'm
                     </span>
@@ -115,14 +117,20 @@ const Home = () => {
                         &nbsp;Musthafa
                     </span>
                 </div>
-                <span className='text-[#F3F4F6] text-center pt-5 text-2xl sm:text-4xl md:text-6xl'>
+                <span className='text-[#F3F4F6] text-center pt-5 text-2xl md:text-6xl'>
                     I'm a Software Engineer.
                 </span>
-                <div className='h-1/12 border-2 rounded-md border-[#EAB308] mt-5 px-2 py-1 text-center items-center text-1xl sm:text-3xl md:text-4xl' >
-                    <span onClick={scrollToSection} className='text-[#EAB308]'>View My Projects</span>
-                    <ExpandMoreIcon sx={{ color: '#EAB308', fontSize: 40 }} />
+                <div className='flex flex-col items-center'>
+                    <div className='border-2 rounded-md border-[#EAB308] text-center items-center text-2xl md:text-4xl w-[300px] md:w-[400px] m-3 p-2' >
+                        <span onClick={scrollToSection} className='text-[#EAB308]'>View My Projects</span>
+                        <ArrowDownwardIcon sx={{ color: '#EAB308', fontSize: 40 }} />
+                    </div>
+                    <div className='border-2 rounded-md border-[#EAB308] text-center items-center text-2xl md:text-4xl w-[150px] md:w-[300px] m-3 p-2' >
+                        <span className='text-[#EAB308]'>Resume</span>
+                        <DownloadIcon sx={{ color: '#EAB308', fontSize: 40 }} />
+                    </div>
                 </div>
-            </div>
+            </div >
         </div >
     )
 }
