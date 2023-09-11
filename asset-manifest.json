@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c57c799.css",
-    "main.js": "/static/js/main.6c952c03.js",
+    "main.css": "/static/css/main.2614f5f5.css",
+    "main.js": "/static/js/main.10a47d96.js",
     "static/media/simp_project.png": "/static/media/simp_project.d3b06dd0649867bbc710.png",
     "static/media/reddit_clone_project.png": "/static/media/reddit_clone_project.a854514bc721b22d4e87.png",
     "static/media/vise_project.png": "/static/media/vise_project.e4edba4e43a2e979d98a.png",
@@ -18,11 +18,11 @@
     "index.html": "/index.html",
     "static/media/vuejs_logo.svg": "/static/media/vuejs_logo.c286d2da48ffbf281f407b0c4c94271f.svg",
     "static/media/microsoft_azure_logo.svg": "/static/media/microsoft_azure_logo.228b07dfb10d28d702e3e81ec2156bfe.svg",
-    "main.2c57c799.css.map": "/static/css/main.2c57c799.css.map",
-    "main.6c952c03.js.map": "/static/js/main.6c952c03.js.map"
+    "main.2614f5f5.css.map": "/static/css/main.2614f5f5.css.map",
+    "main.10a47d96.js.map": "/static/js/main.10a47d96.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c57c799.css",
-    "static/js/main.6c952c03.js"
+    "static/css/main.2614f5f5.css",
+    "static/js/main.10a47d96.js"
   ]
 }
