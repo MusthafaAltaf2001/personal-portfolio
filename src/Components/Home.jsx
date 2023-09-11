@@ -6,6 +6,7 @@ import { loadSlim } from "tsparticles-slim";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import DownloadIcon from '@mui/icons-material/Download';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import Mohamed_Musthafa_Resume from '../Assets/Mohamed_Musthafa_Resume.pdf'
 
 const Home = () => {
 
@@ -126,8 +127,15 @@ const Home = () => {
                         <ArrowDownwardIcon sx={{ color: '#EAB308', fontSize: 40 }} />
                     </div>
                     <div className='border-2 rounded-md border-[#EAB308] text-center items-center text-2xl md:text-4xl w-[150px] md:w-[300px] m-3 p-2' >
-                        <span className='text-[#EAB308]'>Resume</span>
-                        <DownloadIcon sx={{ color: '#EAB308', fontSize: 40 }} />
+                        <a
+                            href={Mohamed_Musthafa_Resume}
+                            download="Mohamed Musthafa Resume"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <span className='text-[#EAB308]'>Resume</span>
+                            <DownloadIcon sx={{ color: '#EAB308', fontSize: 40 }} />
+                        </a>
                     </div>
                 </div>
             </div >
