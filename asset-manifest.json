@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.d693ca8f.css",
-    "main.js": "/static/js/main.24e48bf5.js",
+    "main.js": "/static/js/main.250e5494.js",
     "static/media/simp_project.png": "/static/media/simp_project.d3b06dd0649867bbc710.png",
     "static/media/reddit_clone_project.png": "/static/media/reddit_clone_project.a854514bc721b22d4e87.png",
+    "static/media/Mohamed_Musthafa_Resume.pdf": "/static/media/Mohamed_Musthafa_Resume.ab9e40f2912192b22692.pdf",
     "static/media/vise_project.png": "/static/media/vise_project.e4edba4e43a2e979d98a.png",
     "static/media/nodejs_logo.svg": "/static/media/nodejs_logo.5a3a9ca294db0539884810b6e6eafedd.svg",
     "static/media/reactjs_logo.svg": "/static/media/reactjs_logo.ae62622598f39552abdcdb023e554c6f.svg",
@@ -19,10 +20,10 @@
     "static/media/vuejs_logo.svg": "/static/media/vuejs_logo.c286d2da48ffbf281f407b0c4c94271f.svg",
     "static/media/microsoft_azure_logo.svg": "/static/media/microsoft_azure_logo.228b07dfb10d28d702e3e81ec2156bfe.svg",
     "main.d693ca8f.css.map": "/static/css/main.d693ca8f.css.map",
-    "main.24e48bf5.js.map": "/static/js/main.24e48bf5.js.map"
+    "main.250e5494.js.map": "/static/js/main.250e5494.js.map"
   },
   "entrypoints": [
     "static/css/main.d693ca8f.css",
-    "static/js/main.24e48bf5.js"
+    "static/js/main.250e5494.js"
   ]
 }
