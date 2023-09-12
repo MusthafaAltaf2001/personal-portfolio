@@ -53,7 +53,7 @@ export const Nav = () => {
                     <span onClick={() => { navBarToggle(); scrollToContact(); }} className="header-drawer-text" href="/#">CONTACT</span>
                 </div>
             </div>
-            <div className="z-200 absolute top-2 right-2 hidden max-md:block">
+            <div className="z-200 absolute top-2 left-2 hidden max-md:block">
                 <button
                     className="flex flex-col h-12 w-12 rounded justify-center items-center group"
                     onClick={navBarToggle}
