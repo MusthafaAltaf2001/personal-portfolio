@@ -19,7 +19,7 @@
 
 
   .projects-div {
-    @apply flex w-[270px] md:w-[300px] flex-col backdrop-blur basis-auto bg-[#F4DED6]/20 border-0 rounded-xl text-[#F3F4F6] p-4
+    @apply flex w-[270px] md:w-[300px] flex-col backdrop-blur basis-auto bg-[#F4DED6]/20 border-0 rounded-xl text-[#F3F4F6] p-4 h-[410px]
   }
   .projects-div-heading {
     @apply  text-xl font-bold

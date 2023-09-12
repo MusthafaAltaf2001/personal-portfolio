@@ -8,12 +8,12 @@ import tutorStudentBiddingProject from '../Assets/tutor_student_bidding_project.
 
 
 const ProjectsList = () => {
-    // const vise_project_text = ""
-    // const simp_project_text = ""
-    // const vise_project_text = ""
-    // const vise_project_text = ""
-    // const vise_project_text = ""
-    // const vise_project_text = ""
+    const viseProjectText = "E-Commerce platform and personalized tool for visually impaired users where Jo Malone products can be purchased. The app is specialized for people who have visual impairment and still want to express their beauty to the world."
+    const simpProjectText = "A platform that allows students to upload their details which is not limited to Resume, skills etc, and potential employers are allowed to post internship job postings which students apply for."
+    const redditCloneProjectText = "A cloned version of the website reddit.com which is built using MERN stack (Mongodb, Express.js, React.js and Node.js). This was just a fun project to work on my React skills."
+    const reportcareClinicianProjectText = "A healthcare app that can be used by doctors or clinicians which allows them to monitor the health of their patients. It has a builtin alert system that is triggered when a patient is in bad health and reports to the relevant authorities."
+    const trackitProjectText = "A tracking system for teams that allows project managers to track progress of work done by each team member. This is done by diaplying the number of man hours put in by each member and also keeps track of how each member is contributing to the team. "
+    const tutorStudentBiddingProjectText = "A Bidding system where tutors can post tution classes with a starting bid and students using this system can place bids on a tution post. Once the bidding period is over, the highest bidder is contacted via the platform and an agreement is made beteern the two parties."
 
 
     return (
@@ -22,42 +22,42 @@ const ProjectsList = () => {
                 <div className="projects-div">
                     <span className='projects-div-heading'>VISE - Visually Impaired Shopping Experience</span>
                     <img className='projects-div-img' src={viseProject} alt=' ' />
-                    <span className='projects-div-description'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    <span className='projects-div-description'>{viseProjectText}</span>
                 </div>
             </a>
             <a href="https://github.com/MusthafaAltaf2001/student_internship_management_program">
                 <div className="projects-div">
                     <span className='projects-div-heading'>SIMP - Student Internship Management Program</span>
                     <img className='projects-div-img' src={simpProject} alt=' ' />
-                    <span className='projects-div-description'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    <span className='projects-div-description'>{simpProjectText}</span>
                 </div>
             </a>
             <a href="https://github.com/MusthafaAltaf2001/reddit-clone-1">
                 <div className="projects-div">
                     <span className='projects-div-heading'>Reddit Web Clone - MERN Stack</span>
                     <img className='projects-div-img' src={redditCloneProject} alt=' ' />
-                    <span className='projects-div-description'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    <span className='projects-div-description'>{redditCloneProjectText}</span>
                 </div>
             </a>
             <a href='https://github.com/MusthafaAltaf2001/student_tutor_bidding_system'>
                 <div className="projects-div">
                     <span className='projects-div-heading'>Student Tutor Bidding System</span>
                     <img className='projects-div-img' src={tutorStudentBiddingProject} alt=' ' />
-                    <span className='projects-div-description'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    <span className='projects-div-description'>{tutorStudentBiddingProjectText}</span>
                 </div>
             </a>
             <a href='https://github.com/MusthafaAltaf2001/TrackIt.com'>
                 <div className="projects-div">
                     <span className='projects-div-heading'>TrackIt - Track and Monitor Teams</span>
                     <img className='projects-div-img' src={trackitProject} alt=' ' />
-                    <span className='projects-div-description'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    <span className='projects-div-description'>{trackitProjectText}</span>
                 </div>
             </a>
             <a href="https://github.com/MusthafaAltaf2001/reportcare-clinician">
                 <div className="projects-div">
                     <span className='projects-div-heading'>ReportCare - Patient Health Monitor</span>
                     <img className='projects-div-img' src={reportcareClinicianProject} alt=' ' />
-                    <span className='projects-div-description'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    <span className='projects-div-description'>{reportcareClinicianProjectText}</span>
                 </div>
             </a>
         </div >
