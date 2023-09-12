@@ -37,10 +37,10 @@ export const Nav = () => {
                 <div className="flex flex-row justify-center items-center">
                     <div className="block max-md:hidden">
                         <div className="flex items-center justify-center">
-                            <span onClick={scrollToHome} className="header-right-text">HOME</span>
-                            <span onClick={scrollToAbout} className="header-right-text">ABOUT</span>
-                            <span onClick={scrollToProjects} className="header-right-text">PROJECTS</span>
-                            <span onClick={scrollToContact} className="header-right-text">CONTACT</span>
+                            <button onClick={scrollToHome} className="header-right-text">HOME</button>
+                            <button onClick={scrollToAbout} className="header-right-text">ABOUT</button>
+                            <button onClick={scrollToProjects} className="header-right-text">PROJECTS</button>
+                            <button onClick={scrollToContact} className="header-right-text">CONTACT</button>
                         </div>
                     </div>
                 </div>

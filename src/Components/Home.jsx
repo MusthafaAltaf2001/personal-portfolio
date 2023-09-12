@@ -54,8 +54,10 @@ const Home = () => {
                 </span>
                 <div className='flex flex-col items-center'>
                     <div className='border-2 rounded-md border-[#EAB308] text-center items-center text-xl md:text-4xl w-[250px] md:w-[400px] m-3 p-2' >
-                        <span onClick={scrollToSection} className='text-[#EAB308]'>View My Work</span>
-                        <ArrowDownwardIcon sx={{ color: '#EAB308', fontSize: 35 }} />
+                        <button>
+                            <span onClick={scrollToSection} className='text-[#EAB308]'>View My Work</span>
+                            <ArrowDownwardIcon sx={{ color: '#EAB308', fontSize: 35 }} />
+                        </button>
                     </div>
                     <div className='border-2 rounded-md border-[#EAB308] text-center items-center text-xl md:text-4xl w-[150px] md:w-[300px] m-3 p-2' >
                         <a
