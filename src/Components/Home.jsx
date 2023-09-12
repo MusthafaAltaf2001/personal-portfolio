@@ -53,13 +53,13 @@ const Home = () => {
                     I'm a Software Engineer.
                 </span>
                 <div className='flex flex-col items-center'>
-                    <div className='border-2 rounded-md border-[#EAB308] text-center items-center text-xl md:text-4xl w-[250px] md:w-[400px] m-3 p-2' >
+                    <div className='border-2 rounded-md border-[#EAB308] text-center items-center text-xl md:text-4xl w-fit m-3 p-2' >
                         <button>
                             <span onClick={scrollToSection} className='text-[#EAB308]'>View My Work</span>
-                            <ArrowDownwardIcon sx={{ color: '#EAB308', fontSize: 35 }} />
+                            <ArrowDownwardIcon sx={{ color: '#EAB308', fontSize: 33 }} />
                         </button>
                     </div>
-                    <div className='border-2 rounded-md border-[#EAB308] text-center items-center text-xl md:text-4xl w-[150px] md:w-[300px] m-3 p-2' >
+                    <div className='border-2 rounded-md border-[#EAB308] text-center items-center text-xl md:text-4xl w-fit m-3 p-2' >
                         <a
                             href="https://drive.google.com/file/d/16FokG3XRfUYQRChcm8BKXBmWxdYWXqMo/view?usp=sharing"
                             download="Mohamed Musthafa Resume"
@@ -67,7 +67,7 @@ const Home = () => {
                             rel="noreferrer"
                         >
                             <span className='text-[#EAB308]'>Resume</span>
-                            <DownloadIcon sx={{ color: '#EAB308', fontSize: 35 }} />
+                            <DownloadIcon sx={{ color: '#EAB308', fontSize: 33 }} />
                         </a>
                     </div>
                 </div>
