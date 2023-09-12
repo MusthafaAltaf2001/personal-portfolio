@@ -118,9 +118,9 @@ const Footer = () => {
                     <input onChange={handleNameChange} value={name} className='bg-[#1F2937] text-[#F3F4F6] border-0 rounded p-2 w-[200px] xs:w-[240px] sm:w-[280px] md:w-[250px] m-2' type='text' name="myInput" placeholder='Name (Optional)' />
                     <input onChange={handleEmailChange} value={email} className='bg-[#1F2937] text-[#F3F4F6] border-0 rounded p-2 w-[200px] xs:w-[240px] sm:w-[280px] md:w-[250px] m-2' type='email' name="myInput" placeholder='Your email' />
                     <textArea onChange={handleMessageChange} value={message} className='bg-[#1F2937] text-[#F3F4F6] border-0 rounded px-2 pt-2 pb-[120px] w-[250px] xs:w-[300px] sm:w-[350px] md:w-[320px] m-2 text-justify flex-wrap' type='text' name="myInput" placeholder='Message' />
-                    <div onClick={sendMessage} className='w-40 h-1/12  rounded-md m-2 bg-[#EAB308] px-2 py-1 text-center items-center' >
+                    <button onClick={sendMessage} className='w-40 h-1/12  rounded-md m-2 bg-[#EAB308] px-2 py-1 text-center items-center' >
                         <span className='text-[#000000]'>Send Message</span>
-                    </div>
+                    </button>
                 </div>
             </div>
             <div className='flex flex-row py-8'>
