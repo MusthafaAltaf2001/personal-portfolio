@@ -32,6 +32,13 @@ const ProjectsList = () => {
                     <span className='projects-div-description'>{simpProjectText}</span>
                 </div>
             </a>
+            <a href="https://github.com/MusthafaAltaf2001/reportcare-clinician">
+                <div className="projects-div">
+                    <span className='projects-div-heading'>ReportCare - Patient Health Monitor</span>
+                    <img className='projects-div-img' src={reportcareClinicianProject} alt=' ' />
+                    <span className='projects-div-description'>{reportcareClinicianProjectText}</span>
+                </div>
+            </a>
             <a href="https://github.com/MusthafaAltaf2001/reddit-clone-1">
                 <div className="projects-div">
                     <span className='projects-div-heading'>Reddit Web Clone - MERN Stack</span>
@@ -51,13 +58,6 @@ const ProjectsList = () => {
                     <span className='projects-div-heading'>TrackIt - Track and Monitor Teams</span>
                     <img className='projects-div-img' src={trackitProject} alt=' ' />
                     <span className='projects-div-description'>{trackitProjectText}</span>
-                </div>
-            </a>
-            <a href="https://github.com/MusthafaAltaf2001/reportcare-clinician">
-                <div className="projects-div">
-                    <span className='projects-div-heading'>ReportCare - Patient Health Monitor</span>
-                    <img className='projects-div-img' src={reportcareClinicianProject} alt=' ' />
-                    <span className='projects-div-description'>{reportcareClinicianProjectText}</span>
                 </div>
             </a>
         </div >
