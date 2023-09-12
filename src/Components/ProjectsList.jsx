@@ -9,7 +9,7 @@ import tutorStudentBiddingProject from '../Assets/tutor_student_bidding_project.
 
 const ProjectsList = () => {
     const viseProjectText = "Specialized E-Commerce platform and personalized tool for visually impaired users where Jo Malone products can be purchased. Consists of an AI computer vision from Microsoft Azure where products can be scanned through the device camera for visually impaired users."
-    const simpProjectText = "A platform that allows students to upload their details like Resume and skills, and employers can post internship job postings which students can apply for."
+    const simpProjectText = "A platform that allows students to upload their details like Resume and skills, and employers can post internship job postings which students can apply for. This enables students to find their employers much faster and conveniently."
     const redditCloneProjectText = "A cloned version of the website reddit.com which is built using MERN stack (Mongodb, Express.js, React.js and Node.js). This was just a fun project to work on my React skills."
     const reportcareClinicianProjectText = "A healthcare app that can be used by doctors or clinicians which allows them to monitor the health of their patients. It has a builtin alert system that is triggered when a patient is in bad health and reports to the relevant authorities."
     const trackitProjectText = "A tracking system for teams that allows project managers to track progress of work done by each team member. This is done by diaplying the number of man hours put in by each member and also keeps track of how each member is contributing to the team. "
