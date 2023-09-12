@@ -27,7 +27,7 @@ const ProjectsList = () => {
             </a>
             <a href="https://github.com/MusthafaAltaf2001/student_internship_management_program">
                 <div className="projects-div">
-                    <span className='projects-div-heading'>SIMP - Student Internship Management Program</span>
+                    <span className='projects-div-heading'>Student Internship Management Program</span>
                     <img className='projects-div-img' src={simpProject} alt=' ' />
                     <span className='projects-div-description'>{simpProjectText}</span>
                 </div>
