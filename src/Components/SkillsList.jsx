@@ -22,28 +22,32 @@ const SkillsList = () => {
                     <span>Javascript</span>
                 </div>
                 <div className="about-skills-div">
+                    <img className="about-skills-div-img" src={python_logo} alt='' />
+                    <span>Python</span>
+                </div>
+                <div className="about-skills-div">
+                    <img className="about-skills-div-img" src={java_logo} alt='' />
+                    <span>Java</span>
+                </div>
+                <div className="about-skills-div">
                     <img className="about-skills-div-img" src={git_logo} alt='' />
                     <span>Git</span>
-                </div>
-                <div className="about-skills-div">
-                    <img className="about-skills-div-img" src={nodejs_logo} alt='' />
-                    <span>Nodejs</span>
-                </div>
-                <div className="about-skills-div">
-                    <img className="about-skills-div-img" src={reactjs_logo} alt='' />
-                    <span>React</span>
-                </div>
-                <div className="about-skills-div">
-                    <img className="about-skills-div-img" src={tailwindcss_logo} alt='' />
-                    <span>TailwindCSS</span>
                 </div>
                 <div className="about-skills-div">
                     <img className="about-skills-div-img" src={vuejs_logo} alt='' />
                     <span>Vuejs</span>
                 </div>
                 <div className="about-skills-div">
-                    <img className="about-skills-div-img" src={java_logo} alt='' />
-                    <span>Java</span>
+                    <img className="about-skills-div-img" src={reactjs_logo} alt='' />
+                    <span>React</span>
+                </div>
+                <div className="about-skills-div">
+                    <img className="about-skills-div-img" src={redux_logo} alt='' />
+                    <span>Redux</span>
+                </div>
+                <div className="about-skills-div">
+                    <img className="about-skills-div-img" src={tailwindcss_logo} alt='' />
+                    <span>TailwindCSS</span>
                 </div>
                 <div className="about-skills-div">
                     <img className="about-skills-div-img" src={material_ui_logo} alt='' />
@@ -54,16 +58,12 @@ const SkillsList = () => {
                     <span>Microsoft Azure</span>
                 </div>
                 <div className="about-skills-div">
+                    <img className="about-skills-div-img" src={nodejs_logo} alt='' />
+                    <span>Nodejs</span>
+                </div>
+                <div className="about-skills-div">
                     <img className="about-skills-div-img" src={mongodb_logo} alt='' />
                     <span>MongoDB</span>
-                </div>
-                <div className="about-skills-div">
-                    <img className="about-skills-div-img" src={redux_logo} alt='' />
-                    <span>Redux</span>
-                </div>
-                <div className="about-skills-div">
-                    <img className="about-skills-div-img" src={python_logo} alt='' />
-                    <span>Python</span>
                 </div>
             </div>
         </div>
