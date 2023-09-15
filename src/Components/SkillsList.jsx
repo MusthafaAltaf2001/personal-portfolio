@@ -11,6 +11,11 @@ import microsoft_azure_logo from '../Assets/Logos/microsoft_azure_logo.svg'
 import mongodb_logo from '../Assets/Logos/mongodb_logo.svg'
 import python_logo from '../Assets/Logos/python_logo.svg'
 import redux_logo from '../Assets/Logos/redux_logo.svg'
+import C_program_logo from '../Assets/Logos/C_program_logo.svg'
+import jira_logo from '../Assets/Logos/jira_logo.svg'
+import trello_logo from '../Assets/Logos/trello_logo.svg'
+import aws_logo from '../Assets/Logos/aws_logo.svg'
+
 
 
 const SkillsList = () => {
@@ -64,6 +69,22 @@ const SkillsList = () => {
                 <div className="about-skills-div">
                     <img className="about-skills-div-img" src={mongodb_logo} alt='' />
                     <span>MongoDB</span>
+                </div>
+                <div className="about-skills-div">
+                    <img className="about-skills-div-img" src={C_program_logo} alt='' />
+                    <span>C Program</span>
+                </div>
+                <div className="about-skills-div">
+                    <img className="about-skills-div-img" src={aws_logo} alt='' />
+                    <span>AWS</span>
+                </div>
+                <div className="about-skills-div">
+                    <img className="about-skills-div-img" src={trello_logo} alt='' />
+                    <span>Trello</span>
+                </div>
+                <div className="about-skills-div">
+                    <img className="about-skills-div-img" src={jira_logo} alt='' />
+                    <span>Jira</span>
                 </div>
             </div>
         </div>
