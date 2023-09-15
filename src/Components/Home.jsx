@@ -10,6 +10,8 @@ import options from '../Configs/tsparticle.config.js'
 
 const Home = () => {
 
+    const resumeLink = "https://drive.google.com/file/d/1yF567Gva9lAJb1fcl7UycpNdld-sAhr9/view?usp=sharing"
+
     const particlesInit = useCallback(async engine => {
         console.log(engine);
         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -61,7 +63,7 @@ const Home = () => {
                     </div>
                     <div className='border-2 rounded-md border-[#EAB308] text-center items-center text-xl md:text-4xl w-fit m-3 p-2' >
                         <a
-                            href="https://drive.google.com/file/d/16FokG3XRfUYQRChcm8BKXBmWxdYWXqMo/view?usp=sharing"
+                            href={resumeLink}
                             download="Mohamed Musthafa Resume"
                             target="_blank"
                             rel="noreferrer"
