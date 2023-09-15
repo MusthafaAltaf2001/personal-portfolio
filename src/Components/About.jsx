@@ -5,7 +5,7 @@ import SkillsList from './SkillsList'
 
 const About = () => {
     const aboutText =
-        "I'm a passionate software developer with two years of experience in developing software, mainly focusing on the frontend. I love learning and always strive to expand my knowledge in the software world. I find working on software projects exciting because it involves solving problems and using logic, which happens to be one of my core strengths."
+        "I'm a passionate software developer with two years of experience in software development, mainly focused on frontend development. I love learning new skills and always strive to expand my knowledge in the software world. I find working on software projects exciting because it involves solving problems and using logic, which happens to be one of my core strengths."
 
     return (
         <div id="about" className='flex flex-col items-center pt-16'>
