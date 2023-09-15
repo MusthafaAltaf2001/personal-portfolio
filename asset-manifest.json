@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9a7316f.css",
-    "main.js": "/static/js/main.41f42ad4.js",
+    "main.css": "/static/css/main.3e672dd8.css",
+    "main.js": "/static/js/main.6ecfb2cc.js",
     "static/media/simp_project.png": "/static/media/simp_project.d3b06dd0649867bbc710.png",
     "static/media/trackit_project.png": "/static/media/trackit_project.b664bdce7639a1e7eef8.png",
     "static/media/reddit_clone_project.png": "/static/media/reddit_clone_project.a854514bc721b22d4e87.png",
@@ -10,22 +10,26 @@
     "static/media/reportcare_clinician_project.png": "/static/media/reportcare_clinician_project.7d315bad4bf55e8936fb.png",
     "static/media/nodejs_logo.svg": "/static/media/nodejs_logo.5a3a9ca294db0539884810b6e6eafedd.svg",
     "static/media/reactjs_logo.svg": "/static/media/reactjs_logo.ae62622598f39552abdcdb023e554c6f.svg",
+    "static/media/aws_logo.svg": "/static/media/aws_logo.a121a3ca24c00a3ba8dc05bc8a3ba1dd.svg",
     "static/media/redux_logo.svg": "/static/media/redux_logo.a95675408ae17c456965e2f09376c31a.svg",
     "static/media/java_logo.svg": "/static/media/java_logo.83165dfb2f5a7657ce4c73e0ba3cef32.svg",
     "static/media/python_logo.svg": "/static/media/python_logo.6a8b2999db46fb931134216e8fdfdb2c.svg",
     "static/media/material_ui_logo.svg": "/static/media/material_ui_logo.cecbdddbb65b5446d456c95e581d0e3e.svg",
+    "static/media/jira_logo.svg": "/static/media/jira_logo.f128652b7fd65b4bec7e8dbe8667e1b1.svg",
     "static/media/git_logo.svg": "/static/media/git_logo.fd381642a8b14fec88b8d6df1ff25220.svg",
     "static/media/javascript_logo.svg": "/static/media/javascript_logo.fd46ca41839433d73577989d86eb2fe2.svg",
     "static/media/tailwindcss_logo.svg": "/static/media/tailwindcss_logo.50fbcf516b9a3774e9a83272167059ae.svg",
+    "static/media/C_program_logo.svg": "/static/media/C_program_logo.a6e28c9c99f89ff327123ea5ac4555a4.svg",
+    "static/media/trello_logo.svg": "/static/media/trello_logo.928ecd0ef21db30aaede3f63eea28cbe.svg",
     "static/media/mongodb_logo.svg": "/static/media/mongodb_logo.bfa6cdd80f4a99232cadb39ebbb976d2.svg",
     "index.html": "/index.html",
     "static/media/vuejs_logo.svg": "/static/media/vuejs_logo.c286d2da48ffbf281f407b0c4c94271f.svg",
     "static/media/microsoft_azure_logo.svg": "/static/media/microsoft_azure_logo.228b07dfb10d28d702e3e81ec2156bfe.svg",
-    "main.e9a7316f.css.map": "/static/css/main.e9a7316f.css.map",
-    "main.41f42ad4.js.map": "/static/js/main.41f42ad4.js.map"
+    "main.3e672dd8.css.map": "/static/css/main.3e672dd8.css.map",
+    "main.6ecfb2cc.js.map": "/static/js/main.6ecfb2cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9a7316f.css",
-    "static/js/main.41f42ad4.js"
+    "static/css/main.3e672dd8.css",
+    "static/js/main.6ecfb2cc.js"
   ]
 }
