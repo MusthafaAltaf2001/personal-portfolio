@@ -41,7 +41,7 @@ const Home = () => {
                 />
             </div>
             <div className='flex flex-col items-center justify-center h-5/6'>
-                <div className='flex flex-row items-center justify-center text-2xl md:text-6xl'>
+                <div className='flex flex-row items-center justify-center text-2xl xs:text-3xl sm:text-4xl md:text-6xl'>
                     <span className='text-[#F3F4F6] text-center text-ellipsis'>
                         Hello, I'm
                     </span>
@@ -49,7 +49,7 @@ const Home = () => {
                         &nbsp;Musthafa
                     </span>
                 </div>
-                <span className='text-[#F3F4F6] text-center pt-5 text-2xl md:text-6xl'>
+                <span className='text-[#F3F4F6] text-center pt-5 text-2xl xs:text-3xl sm:text-4xl md:text-6xl'>
                     I'm a Software Engineer.
                 </span>
                 <div className='flex flex-col items-center'>

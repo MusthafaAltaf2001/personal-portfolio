@@ -19,7 +19,7 @@ const options = {
         },
         modes: {
             push: {
-                quantity: 2,
+                quantity: 4,
             },
             repulse: {
                 distance: 200,
@@ -45,7 +45,7 @@ const options = {
                 default: "bounce",
             },
             random: false,
-            speed: 2,
+            speed: 3,
             straight: true,
         },
         number: {
