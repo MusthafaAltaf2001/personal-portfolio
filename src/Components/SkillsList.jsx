@@ -35,6 +35,10 @@ const SkillsList = () => {
                     <span>Java</span>
                 </div>
                 <div className="about-skills-div">
+                    <img className="about-skills-div-img" src={C_program_logo} alt='' />
+                    <span>C Program</span>
+                </div>
+                <div className="about-skills-div">
                     <img className="about-skills-div-img" src={git_logo} alt='' />
                     <span>Git</span>
                 </div>
@@ -63,20 +67,16 @@ const SkillsList = () => {
                     <span>Microsoft Azure</span>
                 </div>
                 <div className="about-skills-div">
+                    <img className="about-skills-div-img" src={aws_logo} alt='' />
+                    <span>AWS</span>
+                </div>
+                <div className="about-skills-div">
                     <img className="about-skills-div-img" src={nodejs_logo} alt='' />
                     <span>Nodejs</span>
                 </div>
                 <div className="about-skills-div">
                     <img className="about-skills-div-img" src={mongodb_logo} alt='' />
                     <span>MongoDB</span>
-                </div>
-                <div className="about-skills-div">
-                    <img className="about-skills-div-img" src={C_program_logo} alt='' />
-                    <span>C Program</span>
-                </div>
-                <div className="about-skills-div">
-                    <img className="about-skills-div-img" src={aws_logo} alt='' />
-                    <span>AWS</span>
                 </div>
                 <div className="about-skills-div">
                     <img className="about-skills-div-img" src={trello_logo} alt='' />
