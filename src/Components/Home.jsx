@@ -10,7 +10,7 @@ import options from '../Configs/tsparticle.config.js'
 
 const Home = () => {
 
-    const resumeLink = "https://drive.google.com/file/d/1yF567Gva9lAJb1fcl7UycpNdld-sAhr9/view?usp=sharing"
+    const resumeLink = "https://drive.google.com/file/d/1qO9Ww7HG1P3xaTNDLGr3lU90R5noH2RP/view?usp=sharing"
 
     const particlesInit = useCallback(async engine => {
         console.log(engine);
