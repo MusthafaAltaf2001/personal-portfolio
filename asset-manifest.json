@@ -1,35 +1,35 @@
 {
   "files": {
     "main.css": "/static/css/main.d527e50a.css",
-    "main.js": "/static/js/main.ff85c6c1.js",
+    "main.js": "/static/js/main.586925d4.js",
     "static/media/simp_project.png": "/static/media/simp_project.d3b06dd0649867bbc710.png",
     "static/media/trackit_project.png": "/static/media/trackit_project.b664bdce7639a1e7eef8.png",
     "static/media/reddit_clone_project.png": "/static/media/reddit_clone_project.a854514bc721b22d4e87.png",
     "static/media/tutor_student_bidding_project.png": "/static/media/tutor_student_bidding_project.c718bed1a6b753cc7f12.png",
     "static/media/vise_project.png": "/static/media/vise_project.e4edba4e43a2e979d98a.png",
     "static/media/reportcare_clinician_project.png": "/static/media/reportcare_clinician_project.7d315bad4bf55e8936fb.png",
-    "static/media/nodejs_logo.svg": "/static/media/nodejs_logo.37d6040be69b0476879dc97016e8fbbc.svg",
-    "static/media/reactjs_logo.svg": "/static/media/reactjs_logo.ae62622598f39552abdcdb023e554c6f.svg",
-    "static/media/aws_logo.svg": "/static/media/aws_logo.a121a3ca24c00a3ba8dc05bc8a3ba1dd.svg",
-    "static/media/redux_logo.svg": "/static/media/redux_logo.a95675408ae17c456965e2f09376c31a.svg",
-    "static/media/java_logo.svg": "/static/media/java_logo.83165dfb2f5a7657ce4c73e0ba3cef32.svg",
-    "static/media/python_logo.svg": "/static/media/python_logo.6a8b2999db46fb931134216e8fdfdb2c.svg",
-    "static/media/material_ui_logo.svg": "/static/media/material_ui_logo.cecbdddbb65b5446d456c95e581d0e3e.svg",
-    "static/media/jira_logo.svg": "/static/media/jira_logo.f128652b7fd65b4bec7e8dbe8667e1b1.svg",
-    "static/media/git_logo.svg": "/static/media/git_logo.fd381642a8b14fec88b8d6df1ff25220.svg",
-    "static/media/javascript_logo.svg": "/static/media/javascript_logo.fd46ca41839433d73577989d86eb2fe2.svg",
-    "static/media/tailwindcss_logo.svg": "/static/media/tailwindcss_logo.50fbcf516b9a3774e9a83272167059ae.svg",
+    "static/media/nodejs_logo.svg": "/static/media/nodejs_logo.dcb36bc2e9d264449daebb653a78966d.svg",
+    "static/media/reactjs_logo.svg": "/static/media/reactjs_logo.a44bcd74fef6a7a4d3742bbaa4914629.svg",
+    "static/media/aws_logo.svg": "/static/media/aws_logo.4bc7cd3c24423d0cbb74a71c2d64fad5.svg",
+    "static/media/redux_logo.svg": "/static/media/redux_logo.546485b8d93d3edf5b362709cc69afc5.svg",
+    "static/media/java_logo.svg": "/static/media/java_logo.20e92ef26cade183894acdc979f97b45.svg",
+    "static/media/python_logo.svg": "/static/media/python_logo.e78f188fa5e62ee2613d19802f817df6.svg",
+    "static/media/material_ui_logo.svg": "/static/media/material_ui_logo.9bfe0b931f06393fd5fa35678ea081d5.svg",
+    "static/media/jira_logo.svg": "/static/media/jira_logo.2062f9179d9e729f376a6f13cb367256.svg",
+    "static/media/git_logo.svg": "/static/media/git_logo.8497c3c4218d87dc7fd569a5549d60d0.svg",
+    "static/media/javascript_logo.svg": "/static/media/javascript_logo.1d3d28798f08ea1ed7cd47f812044c4f.svg",
+    "static/media/tailwindcss_logo.svg": "/static/media/tailwindcss_logo.7817889fda1887000f0e712239d42b5a.svg",
     "static/media/C_program_logo.svg": "/static/media/C_program_logo.a6e28c9c99f89ff327123ea5ac4555a4.svg",
-    "static/media/trello_logo.svg": "/static/media/trello_logo.928ecd0ef21db30aaede3f63eea28cbe.svg",
-    "static/media/mongodb_logo.svg": "/static/media/mongodb_logo.bfa6cdd80f4a99232cadb39ebbb976d2.svg",
+    "static/media/trello_logo.svg": "/static/media/trello_logo.5360e00ce9fa3faa58fd4889e8830f49.svg",
+    "static/media/mongodb_logo.svg": "/static/media/mongodb_logo.d18b3c0417bd19d758ccab324a5a44a5.svg",
     "index.html": "/index.html",
-    "static/media/vuejs_logo.svg": "/static/media/vuejs_logo.c286d2da48ffbf281f407b0c4c94271f.svg",
+    "static/media/vuejs_logo.svg": "/static/media/vuejs_logo.7219cc0384993fc067ee20c94a66b1e9.svg",
     "static/media/microsoft_azure_logo.svg": "/static/media/microsoft_azure_logo.228b07dfb10d28d702e3e81ec2156bfe.svg",
     "main.d527e50a.css.map": "/static/css/main.d527e50a.css.map",
-    "main.ff85c6c1.js.map": "/static/js/main.ff85c6c1.js.map"
+    "main.586925d4.js.map": "/static/js/main.586925d4.js.map"
   },
   "entrypoints": [
     "static/css/main.d527e50a.css",
-    "static/js/main.ff85c6c1.js"
+    "static/js/main.586925d4.js"
   ]
 }
