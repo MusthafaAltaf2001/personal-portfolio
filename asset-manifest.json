@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.d527e50a.css",
-    "main.js": "/static/js/main.586925d4.js",
+    "main.css": "/static/css/main.157f4b4d.css",
+    "main.js": "/static/js/main.d0356935.js",
     "static/media/simp_project.png": "/static/media/simp_project.d3b06dd0649867bbc710.png",
     "static/media/trackit_project.png": "/static/media/trackit_project.b664bdce7639a1e7eef8.png",
     "static/media/reddit_clone_project.png": "/static/media/reddit_clone_project.a854514bc721b22d4e87.png",
-    "static/media/tutor_student_bidding_project.png": "/static/media/tutor_student_bidding_project.c718bed1a6b753cc7f12.png",
     "static/media/vise_project.png": "/static/media/vise_project.e4edba4e43a2e979d98a.png",
     "static/media/reportcare_clinician_project.png": "/static/media/reportcare_clinician_project.7d315bad4bf55e8936fb.png",
+    "static/media/petville_project.png": "/static/media/petville_project.65de8e7760baab25ecf9.png",
     "static/media/nodejs_logo.svg": "/static/media/nodejs_logo.dcb36bc2e9d264449daebb653a78966d.svg",
     "static/media/reactjs_logo.svg": "/static/media/reactjs_logo.a44bcd74fef6a7a4d3742bbaa4914629.svg",
     "static/media/aws_logo.svg": "/static/media/aws_logo.4bc7cd3c24423d0cbb74a71c2d64fad5.svg",
@@ -25,11 +25,11 @@
     "index.html": "/index.html",
     "static/media/vuejs_logo.svg": "/static/media/vuejs_logo.7219cc0384993fc067ee20c94a66b1e9.svg",
     "static/media/microsoft_azure_logo.svg": "/static/media/microsoft_azure_logo.228b07dfb10d28d702e3e81ec2156bfe.svg",
-    "main.d527e50a.css.map": "/static/css/main.d527e50a.css.map",
-    "main.586925d4.js.map": "/static/js/main.586925d4.js.map"
+    "main.157f4b4d.css.map": "/static/css/main.157f4b4d.css.map",
+    "main.d0356935.js.map": "/static/js/main.d0356935.js.map"
   },
   "entrypoints": [
-    "static/css/main.d527e50a.css",
-    "static/js/main.586925d4.js"
+    "static/css/main.157f4b4d.css",
+    "static/js/main.d0356935.js"
   ]
 }
