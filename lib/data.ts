@@ -1,107 +1,180 @@
 import type { StaticImageData } from "next/image";
 
-import petvilleProject from "@/public/images/projects/petville_project.png";
-import viseProject from "@/public/images/projects/vise_project.png";
-import simpProject from "@/public/images/projects/simp_project.png";
-import reportcareClinicianProject from "@/public/images/projects/reportcare_clinician_project.png";
-import redditCloneProject from "@/public/images/projects/reddit_clone_project.png";
-import trackitProject from "@/public/images/projects/trackit_project.png";
+import petvilleShot from "@/public/images/projects/petville_project.png";
+import viseShot from "@/public/images/projects/vise_project.png";
+import reportcareShot from "@/public/images/projects/reportcare_clinician_project.png";
 
 export const siteConfig = {
-  name: "Musthafa",
+  name: "Musthafa Altaf",
   title: "Musthafa Altaf",
-  description: "Personal Portfolio of Musthafa Altaf",
+  description:
+    "Full-stack developer building web, mobile and AI systems — Colombo, Sri Lanka.",
   url: "https://musthafaaltaf.com",
-  resumeUrl:
-    "https://drive.google.com/file/d/1RPIQ7mOH-9g3MQvDu8iTV8XoI9VSg82h/view?usp=sharing",
+  resumeUrl: "/resume.pdf",
   gaId: "G-VE8V7E4MEJ",
-  contact: {
-    address: "Colombo, Sri Lanka",
-    phone: "+94-76-474-8328",
-    email: "musthafaaltaf2001@gmail.com",
-  },
+  email: "musthafaaltaf2001@gmail.com",
+  location: "Colombo, Sri Lanka",
+  timeZone: "Asia/Colombo",
 };
 
-export const aboutText =
-  "I'm a passionate software developer with two years of experience in software development, mainly focused on frontend development. I love learning new skills and always strive to expand my knowledge in the software world. I find working on software projects exciting because it involves solving problems and using logic, which happens to be one of my core strengths.";
+export const hero = {
+  statement: "Musthafa Altaf builds software with care",
+  subline:
+    "Full-stack developer crafting web, mobile and AI systems — from Colombo, Sri Lanka.",
+};
+
+export const about = {
+  paragraph:
+    "I'm a full-stack developer with 3+ years of experience shipping products end to end — AI-powered knowledge platforms, HIPAA-compliant healthcare systems, and a pet-services marketplace I co-founded and grew to 500+ users in its first three months. I care about the details: interfaces that feel effortless, and systems that don't fall over.",
+  stack: [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "React Native",
+    "Node.js",
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "AWS",
+    "Azure",
+    "Docker",
+    "LlamaIndex",
+  ],
+};
+
+export interface Role {
+  company: string;
+  href?: string;
+  title: string;
+  period: string;
+  location: string;
+  blurb: string;
+  chips: string[];
+}
+
+export const experience: Role[] = [
+  {
+    company: "Serendip",
+    href: "https://goserendip.com",
+    title: "Full-Stack Developer",
+    period: "Dec 2024 — Present",
+    location: "Remote · United States",
+    blurb:
+      "Building the Agentic RAG pipeline behind hitgirl.ai — query success up from 50% to 90%+, ingesting 100,000+ documents per organization from Google Drive, Dropbox and OneDrive — alongside the platform's auth, chat and file management.",
+    chips: ["Next.js", "Python", "Celery", "Docker", "LlamaIndex"],
+  },
+  {
+    company: "Auth Hero",
+    href: "https://auth-hero.com",
+    title: "Software Engineer · Contract",
+    period: "Mar 2025 — Jan 2026",
+    location: "Remote · Silicon Valley",
+    blurb:
+      "Led the HIPAA refactor onto Azure's FHIR API (25+ resources) and built a multi-portal workers'-compensation platform serving clinicians, employers, insurers and patients.",
+    chips: ["Next.js", "tRPC", "React Native", "Azure FHIR"],
+  },
+  {
+    company: "Petville",
+    href: "https://petville.co",
+    title: "Co-Founder",
+    period: "Dec 2023 — Aug 2024",
+    location: "Remote",
+    blurb:
+      "Co-founded a pet-services marketplace that reached 500+ users in three months. Sole developer of the B2B merchant dashboard — inventory, bookings, analytics, payments and courier dispatch.",
+    chips: ["React", "Node.js", "Google Cloud"],
+  },
+  {
+    company: "GreenSHeart",
+    title: "Software Engineer",
+    period: "Mar 2023 — Nov 2023",
+    location: "Remote",
+    blurb:
+      "Built real-time patient alerting on AWS Lambda, monitoring seven health metrics from smartwatch-connected patients and notifying clinicians the moment readings crossed safe thresholds.",
+    chips: ["AWS Lambda", "React"],
+  },
+  {
+    company: "The Estée Lauder Companies",
+    title: "Software Engineer Intern",
+    period: "Nov 2022 — Feb 2023",
+    location: "Kuala Lumpur, Malaysia",
+    blurb:
+      "Led five interns to the program's top-ranked solution — an audio-guided shopping app for visually impaired users — presented to New York leadership, earning the only private follow-up with the CTO.",
+    chips: ["React Native", "Azure Cloud Vision"],
+  },
+];
 
 export interface Project {
   title: string;
+  tagline: string;
   description: string;
   href: string;
-  image: StaticImageData;
-  imageClassName?: string;
+  chips: string[];
+  image?: StaticImageData;
+  /** Light backdrop + contain fit for transparent logo artwork */
+  imageBg?: string;
 }
 
-export const projects: Project[] = [
+export const featuredProjects: Project[] = [
   {
-    title: "Petville - Petcare Affordable and Convenient",
+    title: "Petville",
+    tagline: "Pet care, affordable and convenient",
     description:
-      "A platform for new and existing pet owners to purchase products and services conveniently and affordably. Allows pet businesses to also promote themselves to customers who are looking for their services and products.",
+      "A B2C/B2B marketplace where pet owners find products and services, and pet businesses reach customers. Grew to 500+ active users within three months of launch; I built the entire merchant dashboard — inventory, appointments, sales-funnel analytics, payments and courier dispatch.",
     href: "https://petville.co/",
-    image: petvilleProject,
-    imageClassName: "bg-[#EFE9E7]",
+    chips: ["React", "Node.js", "Recharts", "Google Cloud"],
+    image: petvilleShot,
+    imageBg: "#EFE9E7",
   },
   {
-    title: "VISE - Visually Impaired Shopping Experience",
+    title: "VISE",
+    tagline: "Shopping, audio-guided, for visually impaired users",
     description:
-      "Partnered with Jo Malone London to create an E-Commerce platform and personalized tool for visually impaired users. Consists of an AI computer vision from Microsoft Azure where products can be scanned through the device camera.",
+      "Built with Jo Malone London during my Estée Lauder internship: point your phone at any cologne and the app identifies it with Azure computer vision and reads the details aloud. The top-ranked intern project of its cohort.",
     href: "https://github.com/MusthafaAltaf2001/vise",
-    image: viseProject,
+    chips: ["React Native", "Azure Cloud Vision"],
+    image: viseShot,
   },
+  {
+    title: "ReportCare",
+    tagline: "Real-time patient health monitoring",
+    description:
+      "A clinician-facing platform that watches smartwatch-connected patients — blood pressure, oxygen, medication and more — and raises alerts the moment a reading turns dangerous.",
+    href: "https://github.com/MusthafaAltaf2001/reportcare-clinician",
+    chips: ["React", "AWS Lambda"],
+    image: reportcareShot,
+  },
+];
+
+export const otherProjects: Project[] = [
   {
     title: "Student Internship Management Program",
+    tagline: "Matching students with internships",
     description:
-      "A platform that conveniently allows students to find internships by simply uploading their details like Resume, skills. Employers can post internship job postings which students can apply for.",
+      "Students upload a resume and skills; employers post openings and review applicants.",
     href: "https://github.com/MusthafaAltaf2001/student_internship_management_program",
-    image: simpProject,
+    chips: ["React", "MongoDB"],
   },
   {
-    title: "ReportCare - Patient Health Monitor",
-    description:
-      "A healthcare app that can be used by doctors or clinicians which allows them to monitor the health of their patients. It has a builtin alert system that is triggered when a patient is in bad health and reports to the relevant authorities.",
-    href: "https://github.com/MusthafaAltaf2001/reportcare-clinician",
-    image: reportcareClinicianProject,
-  },
-  {
-    title: "Reddit Web Clone - MERN Stack",
-    description:
-      "A cloned version of the website reddit.com which is built using MERN stack (Mongodb, Express.js, React.js and Node.js). This was just a fun project to work on my React skills.",
+    title: "Reddit Web Clone",
+    tagline: "The front page of the internet, rebuilt",
+    description: "A MERN-stack Reddit clone built for the fun of it.",
     href: "https://github.com/MusthafaAltaf2001/reddit-clone-1",
-    image: redditCloneProject,
+    chips: ["MongoDB", "Express", "React", "Node.js"],
   },
   {
-    title: "TrackIt - Track and Monitor Teams",
+    title: "TrackIt",
+    tagline: "Team effort, made visible",
     description:
-      "A tracking system for teams that allows project managers to track progress of work done by each team member. This is done by diaplying the number of man hours put in by each member and also keeps track of how each member is contributing to the team. ",
+      "Tracks each member's hours and contributions so project managers can see how work is really progressing.",
     href: "https://github.com/MusthafaAltaf2001/TrackIt.com",
-    image: trackitProject,
+    chips: ["React", "Node.js"],
   },
 ];
 
-export interface Skill {
-  name: string;
-  logo: string;
-}
-
-export const skills: Skill[] = [
-  { name: "Javascript", logo: "/images/skills/javascript_logo.svg" },
-  { name: "Python", logo: "/images/skills/python_logo.svg" },
-  { name: "Java", logo: "/images/skills/java_logo.svg" },
-  { name: "C Program", logo: "/images/skills/C_program_logo.svg" },
-  { name: "Git", logo: "/images/skills/git_logo.svg" },
-  { name: "Vuejs", logo: "/images/skills/vuejs_logo.svg" },
-  { name: "React", logo: "/images/skills/reactjs_logo.svg" },
-  { name: "Redux", logo: "/images/skills/redux_logo.svg" },
-  { name: "TailwindCSS", logo: "/images/skills/tailwindcss_logo.svg" },
-  { name: "Material UI", logo: "/images/skills/material_ui_logo.svg" },
-  { name: "Microsoft Azure", logo: "/images/skills/microsoft_azure_logo.svg" },
-  { name: "AWS", logo: "/images/skills/aws_logo.svg" },
-  { name: "Nodejs", logo: "/images/skills/nodejs_logo.svg" },
-  { name: "MongoDB", logo: "/images/skills/mongodb_logo.svg" },
-  { name: "Trello", logo: "/images/skills/trello_logo.svg" },
-  { name: "Jira", logo: "/images/skills/jira_logo.svg" },
-];
+export const now = {
+  paragraph:
+    "Right now I'm deep in agentic AI at Serendip — retrieval pipelines, tool-using LLMs, and the unglamorous plumbing that makes them reliable. Off the clock I'm usually learning something new or plotting the next side project.",
+};
 
 export interface Social {
   name: string;
@@ -109,7 +182,7 @@ export interface Social {
 }
 
 export const socials: Social[] = [
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/musthafaaltaf/" },
   { name: "GitHub", href: "https://github.com/MusthafaAltaf2001" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/musthafaaltaf/" },
   { name: "Instagram", href: "https://www.instagram.com/musthafa.altaf/" },
 ];

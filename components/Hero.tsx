@@ -1,49 +1,74 @@
 "use client";
 
-import { ParticlesBackground } from "@/components/ParticlesBackground";
-import { ArrowDownwardIcon, DownloadIcon } from "@/components/icons";
-import { siteConfig } from "@/lib/data";
+import { motion, useReducedMotion } from "motion/react";
+import { Magnetic } from "@/components/Magnetic";
+import { hero, siteConfig } from "@/lib/data";
 
 export function Hero() {
-  const scrollToSection = () => {
-    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
-  };
+  const reduce = useReducedMotion();
 
   return (
-    <div id="home" className="h-screen">
-      <ParticlesBackground />
-      <div className="flex flex-col items-center justify-center h-5/6">
-        <div className="flex flex-row items-center justify-center text-2xl xs:text-3xl sm:text-4xl md:text-6xl">
-          <span className="text-[#F3F4F6] text-center text-ellipsis">
-            Hello, I&apos;m
-          </span>
-          <span className="text-[#EAB308] text-center">&nbsp;Musthafa</span>
-        </div>
-        <span className="text-[#F3F4F6] text-center pt-5 text-2xl xs:text-3xl sm:text-4xl md:text-6xl">
-          I&apos;m a Software Engineer.
-        </span>
-        <div className="flex flex-col items-center">
-          <div className="border-2 rounded-md border-[#EAB308] text-center items-center text-xl md:text-4xl w-fit m-3 p-2">
-            <button>
-              <span onClick={scrollToSection} className="text-[#EAB308]">
-                View My Work
-              </span>
-              <ArrowDownwardIcon size={33} className="text-[#EAB308]" />
-            </button>
-          </div>
-          <div className="border-2 rounded-md border-[#EAB308] text-center items-center text-xl md:text-4xl w-fit m-3 p-2">
+    <section id="top" className="flex min-h-svh flex-col justify-center px-6">
+      <div className="mx-auto w-full max-w-6xl">
+        <motion.p
+          className="label mb-6"
+          initial={reduce ? false : { opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
+          Full-Stack Developer · {siteConfig.location}
+        </motion.p>
+
+        <motion.h1
+          className="display text-[clamp(2.6rem,8vw,7rem)] text-ink"
+          initial={reduce ? false : { opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
+        >
+          {hero.statement}
+          <motion.span
+            className="text-gold"
+            initial={reduce ? false : { opacity: 0, scale: 0.4 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.7, type: "spring", bounce: 0.55 }}
+          >
+            .
+          </motion.span>
+        </motion.h1>
+
+        <motion.p
+          className="mt-8 max-w-xl text-lg text-ink-muted"
+          initial={reduce ? false : { opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.35 }}
+        >
+          {hero.subline}
+        </motion.p>
+
+        <motion.div
+          className="mt-12 flex flex-wrap items-center gap-5"
+          initial={reduce ? false : { opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          <Magnetic>
             <a
-              href={siteConfig.resumeUrl}
-              download="Mohamed Musthafa Resume"
-              target="_blank"
-              rel="noreferrer"
+              href="#projects"
+              className="inline-block rounded-full bg-gold px-7 py-3.5 font-medium text-ground transition-transform hover:scale-[1.03]"
             >
-              <span className="text-[#EAB308]">Resume</span>
-              <DownloadIcon size={33} className="text-[#EAB308]" />
+              See my work
             </a>
-          </div>
-        </div>
+          </Magnetic>
+          <a
+            href={siteConfig.resumeUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="label link-draw pb-1 text-ink"
+          >
+            Resume ↗
+          </a>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 }

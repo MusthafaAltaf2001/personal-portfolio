@@ -1,16 +1,30 @@
-import { SkillsList } from "@/components/SkillsList";
-import { aboutText } from "@/lib/data";
+import { Reveal } from "@/components/Reveal";
+import { about } from "@/lib/data";
 
 export function About() {
   return (
-    <div id="about" className="flex flex-col items-center pt-16">
-      <span className="text-4xl font-bold text-[#EAB308] px-10 py-4">
-        ABOUT
-      </span>
-      <span className="text-xl text-[#F3F4F6] px-[50px] md:px-[200px] py-4 text-justify xl:px-[450px]">
-        {aboutText}
-      </span>
-      <SkillsList />
-    </div>
+    <section id="about" className="px-6 py-28 md:py-36">
+      <div className="mx-auto max-w-6xl">
+        <Reveal>
+          <p className="label mb-8 border-b border-gold-soft pb-3 w-fit">
+            About
+          </p>
+        </Reveal>
+        <Reveal delay={0.08}>
+          <p className="max-w-3xl text-xl leading-relaxed text-ink-muted md:text-2xl [&>strong]:font-medium [&>strong]:text-ink">
+            {about.paragraph}
+          </p>
+        </Reveal>
+        <Reveal delay={0.16}>
+          <ul className="mt-10 flex max-w-3xl flex-wrap gap-2.5" aria-label="Tech stack">
+            {about.stack.map((tech) => (
+              <li key={tech} className="chip">
+                {tech}
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+      </div>
+    </section>
   );
 }

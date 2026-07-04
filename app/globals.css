@@ -1,70 +1,97 @@
 @import "tailwindcss";
 
 @theme {
-  /* The old tailwind.config.js replaced the whole screens map — mirror it exactly */
-  --breakpoint-*: initial;
-  --breakpoint-xs: 350px; /* Needed for galaxy fold devices */
-  --breakpoint-sm: 480px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 976px;
-  --breakpoint-xl: 1440px;
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 
-  /* Graphik/Merriweather are not loaded as webfonts; browsers fall back to the
-     generic families, matching the live site. Real fonts arrive with the redesign. */
-  --font-*: initial;
-  --font-sans: Graphik, sans-serif;
-  --font-serif: Merriweather, serif;
-
-  --spacing-128: 32rem;
-  --spacing-144: 36rem;
+  /* midnight & gold */
+  --color-ground: #080807;
+  --color-surface: #121210;
+  --color-line: #26251f;
+  --color-ink: #f4f3ef;
+  --color-ink-muted: #a5a198;
+  --color-gold: #eab308;
+  --color-gold-soft: #8a6d0b;
 }
 
-/* Tailwind v3 defaults the live site was built against (v4 changed these) */
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: #e5e7eb;
+  html {
+    scroll-behavior: smooth;
   }
 
-  input::placeholder,
-  textarea::placeholder {
-    color: #9ca3af;
+  body {
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-size: 1rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-gold);
+    color: var(--color-ground);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
   }
 
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     cursor: pointer;
   }
+
+  section {
+    scroll-margin-top: 4rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
 }
 
 @layer components {
-  .header-right-text {
-    @apply text-[#9CA3AF] px-12 text-base md:text-lg hover:text-[#FFFFFF];
-  }
-  .header-drawer-text {
-    @apply p-12 text-[#9CA3AF] hover:text-[#FFFFFF];
-  }
-
-  .about-skills-div {
-    @apply flex flex-col items-center border-2 rounded-lg p-1 m-4 w-[125px] h-[120px] text-center;
-  }
-  .about-skills-div-img {
-    @apply border-0 rounded-lg object-cover w-[80px] h-[80px];
+  /* The statement voice: Archivo pushed wide and heavy */
+  .display {
+    font-stretch: 125%;
+    font-weight: 750;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    text-wrap: balance;
   }
 
-  .projects-div {
-    @apply flex w-[270px] md:w-[300px] flex-col backdrop-blur basis-auto bg-[#F4DED6]/20 border-0 rounded-xl text-[#F3F4F6] p-4 h-[430px];
+  /* Mono eyebrow labels */
+  .label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-muted);
   }
-  .projects-div-heading {
-    @apply text-xl font-bold;
+
+  .chip {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-muted);
+    border: 1px solid var(--color-line);
+    border-radius: 999px;
+    padding: 0.2rem 0.65rem;
+    white-space: nowrap;
   }
-  .projects-div-img {
-    @apply border-0 rounded-xl object-cover h-[200px] w-[250px] py-2;
+
+  .link-draw {
+    background-image: linear-gradient(var(--color-gold), var(--color-gold));
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
   }
-  .projects-div-description {
-    @apply text-sm text-justify;
+  .link-draw:hover,
+  .link-draw:focus-visible {
+    background-size: 100% 1px;
   }
 }
