@@ -4,13 +4,13 @@ import { featuredProjects, otherProjects } from "@/lib/data";
 
 export function Projects() {
   return (
-    <section id="projects" className="px-6 py-28 md:py-36">
+    <section id="projects" className="px-6 py-20 md:py-32">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="label mb-4 border-b border-gold-soft pb-3 w-fit">
             Projects
           </p>
-          <h2 className="display mb-14 text-[clamp(1.8rem,4vw,3rem)] text-ink">
+          <h2 className="display mb-14 text-[clamp(2rem,4.5vw,3.5rem)] text-ink">
             Selected work<span className="text-gold">.</span>
           </h2>
         </Reveal>
@@ -22,7 +22,7 @@ export function Projects() {
                 href={project.href}
                 target="_blank"
                 rel="noreferrer"
-                className={`group grid items-center gap-8 md:grid-cols-2 md:gap-14 ${
+                className={`group grid items-center gap-8 transition-transform duration-300 ease-out hover:-translate-y-1 motion-reduce:transform-none md:grid-cols-2 md:gap-14 ${
                   i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
                 }`}
               >

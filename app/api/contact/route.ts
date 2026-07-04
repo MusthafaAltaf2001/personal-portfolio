@@ -15,6 +15,9 @@ export async function POST(request: Request) {
   } catch {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });
   }
+  if (typeof body !== "object" || body === null) {
+    return NextResponse.json({ error: "Invalid request" }, { status: 400 });
+  }
 
   const name = (body.name ?? "").trim();
   const email = (body.email ?? "").trim();

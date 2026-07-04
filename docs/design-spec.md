@@ -19,13 +19,15 @@
 
 Rule: gold appears at most once per viewport-height of scroll. Everything else is monochrome warmth. No second accent color anywhere.
 
+Carve-out: form **error status text** uses a semantic red (`red-400`); semantic state color is not an accent and does not count against the gold rule.
+
 ### Typography
 
 - **Display: Archivo** (Google Fonts, variable — weight 100–900, width 62–125). Statements set at `wdth 125` (Expanded), weight 700–800, tight leading (1.02–1.1), tracking `-0.02em`. This is the personality of the site.
 - **Body: Archivo** at normal width, weight 400/500. One family, two voices — cohesive and fast (single variable font file via `next/font/google`).
 - **Labels: Geist Mono** (Google Fonts), 11–12px, uppercase, `+0.08em` tracking, muted color — section eyebrows ("01 — EXPERIENCE"-style only if numbering reads as sequence; otherwise plain "EXPERIENCE"), dates, tech tags.
 
-Type scale (desktop → mobile): hero statement `clamp(3rem, 8vw, 7.5rem)`; section statements `clamp(2rem, 4.5vw, 3.5rem)`; body 16–18px/1.7; labels 11–12px. Prose measure ≤ 65ch.
+Type scale (desktop → mobile): hero statement `clamp(3rem, 8vw, 7.5rem)`; section statements `clamp(2rem, 4.5vw, 3.5rem)`; the closing Contact statement sits between the two at `clamp(2.2rem, 6vw, 4.5rem)`; body 16–18px/1.7; labels 11–12px. Prose measure ≤ 65ch.
 
 ### Space, radius, motion
 
@@ -43,7 +45,7 @@ Type scale (desktop → mobile): hero statement `clamp(3rem, 8vw, 7.5rem)`; sect
 1. **Nav** — minimal fixed top bar: monogram "M." (gold period) left; right: EXPERIENCE / PROJECTS / NOW / CONTACT in mono labels + Resume pill. Transparent over hero, gains `backdrop-blur` + hairline after scroll. Mobile: same full-screen drawer pattern as today, restyled.
 2. **Hero** — full viewport, ground color, statement in Archivo Expanded:
    “Musthafa Altaf builds software with care**.**” (gold period) — subline in muted body text: role + city. Two CTAs: “See my work” (magnetic, gold) and “Resume” (quiet pill → /resume.pdf). No particles; darkness + type carry it.
-3. **About** — one cinematic paragraph (rewritten with user), set large (24–28px), measure 40ch, key phrases in `--color-ink` against muted body. Skills appear as **inline mono chips woven into the prose** (antfu-style) — no logo wall. The 16 SVG logos retire.
+3. **About** — one cinematic paragraph (rewritten with user), set large (24–28px), measure 40ch, key phrases in `--color-ink` against muted body (authored as `**…**` markers in `lib/data.ts`). Skills appear as a **compact mono chip row directly under the prose** — no logo wall. The 16 SVG logos retire.
 4. **Experience** — the new core. Vertical ledger: mono date range left, role + company + 2-line blurb + tech chips right; hairline between entries; company links external. Content sourced from user's resume (pending).
 5. **Projects** — “Featured + list”: 2–3 flagships (Petville, VISE, +1 TBD) as large alternating image/text blocks with hover pan + lift; remaining projects as a compact hoverable list (title — one-liner — tech mono chips — ↗). Screenshots get dark-friendly framing (subtle border, no frosted glassmorphism).
 6. **Now** — short personal block: what he's building/learning now, interests; benji-style local-time footer line (“HH:MM in Colombo, Sri Lanka”).

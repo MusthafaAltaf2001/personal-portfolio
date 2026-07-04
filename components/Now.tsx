@@ -24,10 +24,12 @@ export function Now() {
   const time = useLocalTime();
 
   return (
-    <section id="now" className="px-6 py-28 md:py-36">
+    <section id="now" className="px-6 py-20 md:py-32">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="label mb-8 border-b border-gold-soft pb-3 w-fit">Now</p>
+          <h2 className="label mb-8 border-b border-gold-soft pb-3 w-fit">
+            Now
+          </h2>
         </Reveal>
         <Reveal delay={0.08}>
           <p className="max-w-3xl text-xl leading-relaxed text-ink-muted md:text-2xl">

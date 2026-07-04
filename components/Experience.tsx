@@ -3,13 +3,13 @@ import { experience } from "@/lib/data";
 
 export function Experience() {
   return (
-    <section id="experience" className="px-6 py-28 md:py-36">
+    <section id="experience" className="px-6 py-20 md:py-32">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="label mb-4 border-b border-gold-soft pb-3 w-fit">
             Experience
           </p>
-          <h2 className="display mb-14 text-[clamp(1.8rem,4vw,3rem)] text-ink">
+          <h2 className="display mb-14 text-[clamp(2rem,4.5vw,3.5rem)] text-ink">
             Three years, five teams, real products
             <span className="text-gold">.</span>
           </h2>
@@ -22,7 +22,7 @@ export function Experience() {
                 <div className="group grid gap-3 py-9 transition-colors md:grid-cols-[220px_1fr] md:gap-10">
                   <div>
                     <p className="label pt-1">{role.period}</p>
-                    <p className="label mt-1 opacity-70">{role.location}</p>
+                    <p className="label mt-1">{role.location}</p>
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-ink">

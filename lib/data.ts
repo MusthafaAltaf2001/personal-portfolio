@@ -24,8 +24,9 @@ export const hero = {
 };
 
 export const about = {
+  /** **text** marks key phrases rendered in full-ink emphasis */
   paragraph:
-    "I'm a full-stack developer with 3+ years of experience shipping products end to end — AI-powered knowledge platforms, HIPAA-compliant healthcare systems, and a pet-services marketplace I co-founded and grew to 500+ users in its first three months. I care about the details: interfaces that feel effortless, and systems that don't fall over.",
+    "I'm a full-stack developer with 3+ years of experience shipping products end to end — **AI-powered knowledge platforms**, **HIPAA-compliant healthcare systems**, and a pet-services marketplace I **co-founded and grew to 500+ users** in its first three months. I care about the details: interfaces that feel effortless, and systems that don't fall over.",
   stack: [
     "React",
     "Next.js",
@@ -98,7 +99,7 @@ export const experience: Role[] = [
     period: "Nov 2022 — Feb 2023",
     location: "Kuala Lumpur, Malaysia",
     blurb:
-      "Led five interns to the program's top-ranked solution — an audio-guided shopping app for visually impaired users — presented to New York leadership, earning the only private follow-up with the CTO.",
+      "Led a team of five interns to the program's top-ranked solution — an audio-guided shopping app for visually impaired users — presented to New York leadership, earning the only private follow-up with the CTO.",
     chips: ["React Native", "Azure Cloud Vision"],
   },
 ];

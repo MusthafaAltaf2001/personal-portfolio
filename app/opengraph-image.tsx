@@ -1,3 +1,5 @@
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { ImageResponse } from "next/og";
 import { siteConfig } from "@/lib/data";
 
@@ -5,7 +7,11 @@ export const alt = siteConfig.title;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function OpengraphImage() {
+export default async function OpengraphImage() {
+  const archivo = await readFile(
+    path.join(process.cwd(), "assets/fonts/archivo-expanded-bold.ttf"),
+  );
+
   return new ImageResponse(
     (
       <div
@@ -34,6 +40,7 @@ export default function OpengraphImage() {
         <div
           style={{
             display: "flex",
+            fontFamily: "Archivo",
             fontSize: 96,
             fontWeight: 700,
             letterSpacing: "-0.02em",
@@ -53,6 +60,11 @@ export default function OpengraphImage() {
         </div>
       </div>
     ),
-    size,
+    {
+      ...size,
+      fonts: [
+        { name: "Archivo", data: archivo, weight: 700, style: "normal" },
+      ],
+    },
   );
 }

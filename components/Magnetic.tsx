@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useMotionValue, useSpring, useReducedMotion } from "motion/react";
+import { m, useMotionValue, useSpring, useReducedMotion } from "motion/react";
 import type { ReactNode, MouseEvent } from "react";
 import { useRef } from "react";
 
@@ -31,7 +31,7 @@ export function Magnetic({
   };
 
   return (
-    <motion.div
+    <m.div
       ref={ref}
       onMouseMove={onMove}
       onMouseLeave={onLeave}
@@ -39,6 +39,6 @@ export function Magnetic({
       className={`inline-block ${className ?? ""}`}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

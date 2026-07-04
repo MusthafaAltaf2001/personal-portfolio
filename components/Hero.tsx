@@ -1,55 +1,34 @@
-"use client";
-
-import { motion, useReducedMotion } from "motion/react";
+import type { CSSProperties } from "react";
 import { Magnetic } from "@/components/Magnetic";
 import { hero, siteConfig } from "@/lib/data";
 
-export function Hero() {
-  const reduce = useReducedMotion();
+const delay = (s: string) => ({ "--anim-delay": s }) as CSSProperties;
 
+export function Hero() {
   return (
     <section id="top" className="flex min-h-svh flex-col justify-center px-6">
       <div className="mx-auto w-full max-w-6xl">
-        <motion.p
-          className="label mb-6"
-          initial={reduce ? false : { opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-        >
+        <p className="label anim-fade-up mb-6" style={delay("0.1s")}>
           Full-Stack Developer · {siteConfig.location}
-        </motion.p>
+        </p>
 
-        <motion.h1
-          className="display text-[clamp(2.6rem,8vw,7rem)] text-ink"
-          initial={reduce ? false : { opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
-        >
+        <h1 className="display anim-fade-up text-[clamp(3rem,8vw,7.5rem)] text-ink">
           {hero.statement}
-          <motion.span
-            className="text-gold"
-            initial={reduce ? false : { opacity: 0, scale: 0.4 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.7, type: "spring", bounce: 0.55 }}
-          >
+          <span className="anim-pop inline-block text-gold" style={delay("0.7s")}>
             .
-          </motion.span>
-        </motion.h1>
+          </span>
+        </h1>
 
-        <motion.p
-          className="mt-8 max-w-xl text-lg text-ink-muted"
-          initial={reduce ? false : { opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.35 }}
+        <p
+          className="anim-fade-up mt-8 max-w-xl text-lg text-ink-muted"
+          style={delay("0.35s")}
         >
           {hero.subline}
-        </motion.p>
+        </p>
 
-        <motion.div
-          className="mt-12 flex flex-wrap items-center gap-5"
-          initial={reduce ? false : { opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+        <div
+          className="anim-fade-up mt-12 flex flex-wrap items-center gap-5"
+          style={delay("0.5s")}
         >
           <Magnetic>
             <a
@@ -63,11 +42,11 @@ export function Hero() {
             href={siteConfig.resumeUrl}
             target="_blank"
             rel="noreferrer"
-            className="label link-draw pb-1 text-ink"
+            className="label rounded-full border border-line px-6 py-3.5 text-ink transition-colors hover:border-gold-soft hover:text-gold"
           >
             Resume ↗
           </a>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

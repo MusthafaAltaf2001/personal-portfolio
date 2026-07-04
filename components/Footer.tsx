@@ -5,7 +5,7 @@ export function Footer() {
         <p className="label">
           Designed &amp; built by Musthafa Altaf
         </p>
-        <p className="label opacity-70">Next.js 16 · Tailwind 4 · Vercel</p>
+        <p className="label">Next.js 16 · Tailwind 4 · Vercel</p>
       </div>
     </footer>
   );

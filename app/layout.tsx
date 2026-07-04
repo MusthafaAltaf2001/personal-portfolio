@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Archivo, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { MotionProvider } from "@/components/MotionProvider";
 import { siteConfig } from "@/lib/data";
 import "./globals.css";
 
@@ -39,7 +40,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${archivo.variable} ${geistMono.variable}`}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <MotionProvider>{children}</MotionProvider>
+      </body>
       <GoogleAnalytics gaId={siteConfig.gaId} />
     </html>
   );

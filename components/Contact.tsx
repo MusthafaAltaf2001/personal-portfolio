@@ -12,7 +12,7 @@ type Status =
   | { kind: "error"; text: string };
 
 const inputClasses =
-  "w-full rounded-lg border border-line bg-transparent px-4 py-3 text-ink placeholder:text-ink-muted/60 transition-colors focus:border-gold focus:outline-none";
+  "w-full rounded-lg border border-ink-muted/60 bg-transparent px-4 py-3 text-ink placeholder:text-ink-muted transition-colors focus:border-gold focus:outline-none";
 
 export function Contact() {
   const [name, setName] = useState("");
@@ -47,6 +47,7 @@ export function Contact() {
       setName("");
       setEmail("");
       setMessage("");
+      setCompany("");
       setStatus({ kind: "success", text: "Message sent — I'll be in touch." });
     } catch {
       setStatus({
@@ -57,7 +58,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="px-6 py-28 md:py-36">
+    <section id="contact" className="px-6 py-20 md:py-32">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="label mb-4 border-b border-gold-soft pb-3 w-fit">
@@ -144,7 +145,7 @@ export function Contact() {
                 value={company}
                 onChange={(e) => setCompany(e.target.value)}
                 type="text"
-                name="company"
+                name="contact_extra_7f3a"
                 tabIndex={-1}
                 autoComplete="off"
                 aria-hidden="true"
