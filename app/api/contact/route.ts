@@ -41,17 +41,20 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Name is too long" }, { status: 400 });
   }
 
-  const resend = new Resend(process.env.RESEND_API_KEY);
-  const { error } = await resend.emails.send({
-    from: "Portfolio <onboarding@resend.dev>",
-    to: process.env.CONTACT_TO_EMAIL ?? "musthafaaltaf2001@gmail.com",
-    replyTo: email,
-    subject: `Portfolio contact from ${name || email}`,
-    text: `Name: ${name || "-"}\nEmail: ${email}\n\n${message}`,
-  });
-
-  if (error) {
-    console.error("Contact form send failed:", error);
+  try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    const { error } = await resend.emails.send({
+      from: "Portfolio <onboarding@resend.dev>",
+      to: process.env.CONTACT_TO_EMAIL ?? "musthafaaltaf2001@gmail.com",
+      replyTo: email,
+      subject: `Portfolio contact from ${name || email}`,
+      text: `Name: ${name || "-"}\nEmail: ${email}\n\n${message}`,
+    });
+    if (error) {
+      throw error;
+    }
+  } catch (err) {
+    console.error("Contact form send failed:", err);
     return NextResponse.json(
       { error: "An unexpected server error occurred!" },
       { status: 500 },

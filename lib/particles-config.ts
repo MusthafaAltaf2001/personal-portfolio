@@ -57,6 +57,8 @@ export const particlesOptions: ISourceOptions = {
     number: {
       density: {
         enable: true,
+        width: 800,
+        height: 800,
       },
       value: 80,
     },
