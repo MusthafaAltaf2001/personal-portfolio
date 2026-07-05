@@ -38,7 +38,7 @@ export function Projects() {
                       alt={`${project.title} screenshot`}
                       sizes="(max-width: 768px) 100vw, 540px"
                       className={`aspect-[16/10] w-full transition-transform duration-500 ease-out group-hover:scale-[1.03] ${
-                        project.imageBg
+                        project.imageFit === "contain"
                           ? "object-contain p-10"
                           : "object-cover object-top"
                       }`}

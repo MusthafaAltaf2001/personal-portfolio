@@ -1,6 +1,9 @@
 import type { StaticImageData } from "next/image";
 
 import petvilleShot from "@/public/images/projects/petville_project.png";
+import authHeroShot from "@/public/images/projects/auth-hero_project.webp";
+import hitgirlShot from "@/public/images/projects/hitgirl_project.png";
+import ryderrrShot from "@/public/images/projects/carpool_project.jpg";
 
 export const siteConfig = {
   name: "Musthafa Altaf",
@@ -110,8 +113,10 @@ export interface Project {
   chips: string[];
   /** Featured cards without an image render a wordmark placeholder tile */
   image?: StaticImageData;
-  /** Light backdrop + contain fit for transparent logo artwork */
+  /** Backdrop color behind logo artwork */
   imageBg?: string;
+  /** "contain" for logos; screenshots default to cover */
+  imageFit?: "contain" | "cover";
 }
 
 export const featuredProjects: Project[] = [
@@ -124,6 +129,7 @@ export const featuredProjects: Project[] = [
     chips: ["React", "Node.js", "Recharts", "Google Cloud"],
     image: petvilleShot,
     imageBg: "#EFE9E7",
+    imageFit: "contain",
   },
   {
     title: "Auth Hero",
@@ -132,6 +138,9 @@ export const featuredProjects: Project[] = [
       "A multi-portal healthcare platform automating workers'-compensation insurance workflows for clinicians, employers, insurers and patients — HIPAA-compliant on Azure's FHIR API, replacing a paper process that cost patients treatment time.",
     href: "https://auth-hero.com",
     chips: ["Next.js", "tRPC", "React Native", "Azure FHIR"],
+    image: authHeroShot,
+    imageBg: "#FFFFFF",
+    imageFit: "contain",
   },
   {
     title: "Hitgirl.ai",
@@ -140,14 +149,19 @@ export const featuredProjects: Project[] = [
       "An Agentic-RAG knowledge platform ingesting 100,000+ documents per organization from Google Drive, Dropbox and OneDrive. I built the retrieval pipeline that lifted query success from 50% to over 90%, plus the platform's auth, chat and file management.",
     href: "https://hitgirl.ai",
     chips: ["Next.js", "Python", "Celery", "LlamaIndex"],
+    image: hitgirlShot,
+    imageFit: "contain",
   },
-  // Placeholder — final name, copy, link and image to come from Musthafa
+  // Placeholder copy — final details to come from Musthafa
   {
-    title: "Carpool",
+    title: "Ryderrr",
     tagline: "Ride-sharing for Sri Lankan commuters",
     description:
       "The newest venture, currently in validation: a carpooling platform for Sri Lanka, already past 25 early signups before a line of product code — proving the demand first, building second.",
     chips: ["In validation"],
+    image: ryderrrShot,
+    imageBg: "#FFCC01",
+    imageFit: "contain",
   },
 ];
 
