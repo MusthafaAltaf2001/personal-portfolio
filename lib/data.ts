@@ -1,8 +1,6 @@
 import type { StaticImageData } from "next/image";
 
 import petvilleShot from "@/public/images/projects/petville_project.png";
-import viseShot from "@/public/images/projects/vise_project.png";
-import reportcareShot from "@/public/images/projects/reportcare_clinician_project.png";
 
 export const siteConfig = {
   name: "Musthafa Altaf",
@@ -108,8 +106,9 @@ export interface Project {
   title: string;
   tagline: string;
   description: string;
-  href: string;
+  href?: string;
   chips: string[];
+  /** Featured cards without an image render a wordmark placeholder tile */
   image?: StaticImageData;
   /** Light backdrop + contain fit for transparent logo artwork */
   imageBg?: string;
@@ -127,22 +126,28 @@ export const featuredProjects: Project[] = [
     imageBg: "#EFE9E7",
   },
   {
-    title: "VISE",
-    tagline: "Shopping, audio-guided, for visually impaired users",
+    title: "Auth Hero",
+    tagline: "Workers' compensation, without the paperwork",
     description:
-      "Built with Jo Malone London during my Estée Lauder internship: point your phone at any cologne and the app identifies it with Azure computer vision and reads the details aloud. The top-ranked intern project of its cohort.",
-    href: "https://github.com/MusthafaAltaf2001/vise",
-    chips: ["React Native", "Azure Cloud Vision"],
-    image: viseShot,
+      "A multi-portal healthcare platform automating workers'-compensation insurance workflows for clinicians, employers, insurers and patients — HIPAA-compliant on Azure's FHIR API, replacing a paper process that cost patients treatment time.",
+    href: "https://auth-hero.com",
+    chips: ["Next.js", "tRPC", "React Native", "Azure FHIR"],
   },
   {
-    title: "ReportCare",
-    tagline: "Real-time patient health monitoring",
+    title: "Hitgirl.ai",
+    tagline: "An AI knowledge platform that actually finds answers",
     description:
-      "A clinician-facing platform that watches smartwatch-connected patients — blood pressure, oxygen, medication and more — and raises alerts the moment a reading turns dangerous.",
-    href: "https://github.com/MusthafaAltaf2001/reportcare-clinician",
-    chips: ["React", "AWS Lambda"],
-    image: reportcareShot,
+      "An Agentic-RAG knowledge platform ingesting 100,000+ documents per organization from Google Drive, Dropbox and OneDrive. I built the retrieval pipeline that lifted query success from 50% to over 90%, plus the platform's auth, chat and file management.",
+    href: "https://hitgirl.ai",
+    chips: ["Next.js", "Python", "Celery", "LlamaIndex"],
+  },
+  // Placeholder — final name, copy, link and image to come from Musthafa
+  {
+    title: "Carpool",
+    tagline: "Ride-sharing for Sri Lankan commuters",
+    description:
+      "The newest venture, currently in validation: a carpooling platform for Sri Lanka, already past 25 early signups before a line of product code — proving the demand first, building second.",
+    chips: ["In validation"],
   },
 ];
 
@@ -156,19 +161,20 @@ export const otherProjects: Project[] = [
     chips: ["React", "MongoDB"],
   },
   {
-    title: "Reddit Web Clone",
-    tagline: "The front page of the internet, rebuilt",
-    description: "A MERN-stack Reddit clone built for the fun of it.",
-    href: "https://github.com/MusthafaAltaf2001/reddit-clone-1",
-    chips: ["MongoDB", "Express", "React", "Node.js"],
+    title: "VISE",
+    tagline: "Audio-guided shopping for visually impaired users",
+    description:
+      "Built with Jo Malone London during my Estée Lauder internship — Azure computer vision identifies products and reads them aloud.",
+    href: "https://github.com/MusthafaAltaf2001/vise",
+    chips: ["React Native", "Azure Cloud Vision"],
   },
   {
-    title: "TrackIt",
-    tagline: "Team effort, made visible",
+    title: "ReportCare",
+    tagline: "Real-time patient health monitoring",
     description:
-      "Tracks each member's hours and contributions so project managers can see how work is really progressing.",
-    href: "https://github.com/MusthafaAltaf2001/TrackIt.com",
-    chips: ["React", "Node.js"],
+      "A clinician-facing platform that watches smartwatch-connected patients and raises alerts the moment a reading turns dangerous.",
+    href: "https://github.com/MusthafaAltaf2001/reportcare-clinician",
+    chips: ["React", "AWS Lambda"],
   },
 ];
 

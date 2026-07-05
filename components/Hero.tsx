@@ -4,7 +4,40 @@ import { hero, siteConfig } from "@/lib/data";
 
 const delay = (s: string) => ({ "--anim-delay": s }) as CSSProperties;
 
+const LETTER_STEP = 0.03;
+
+function Letters({ text }: { text: string }) {
+  const words = text.split(" ");
+  let letterIndex = 0;
+  return (
+    <span aria-hidden="true">
+      {words.map((word, w) => (
+        <span key={w}>
+          <span className="inline-block">
+            {word.split("").map((char) => {
+              const d = (letterIndex++ * LETTER_STEP).toFixed(2);
+              return (
+                <span
+                  key={`${w}-${char}-${d}`}
+                  className="anim-letter inline-block"
+                  style={delay(`${d}s`)}
+                >
+                  {char}
+                </span>
+              );
+            })}
+          </span>
+          {w < words.length - 1 ? " " : ""}
+        </span>
+      ))}
+    </span>
+  );
+}
+
 export function Hero() {
+  const letterCount = hero.statement.replace(/ /g, "").length;
+  const periodDelay = (letterCount * LETTER_STEP + 0.2).toFixed(2);
+
   return (
     <section id="top" className="flex min-h-svh flex-col justify-center px-6">
       <div className="mx-auto w-full max-w-6xl">
@@ -12,9 +45,16 @@ export function Hero() {
           Full-Stack Developer · {siteConfig.location}
         </p>
 
-        <h1 className="display anim-fade-up text-[clamp(3rem,8vw,7.5rem)] text-ink">
-          {hero.statement}
-          <span className="anim-pop inline-block text-gold" style={delay("0.7s")}>
+        <h1
+          className="display text-[clamp(3rem,8vw,7.5rem)] text-ink"
+          aria-label={`${hero.statement}.`}
+        >
+          <Letters text={hero.statement} />
+          <span
+            aria-hidden="true"
+            className="anim-pop inline-block text-gold"
+            style={delay(`${periodDelay}s`)}
+          >
             .
           </span>
         </h1>

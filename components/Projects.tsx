@@ -16,25 +16,23 @@ export function Projects() {
         </Reveal>
 
         <div className="flex flex-col gap-20">
-          {featuredProjects.map((project, i) => (
-            <Reveal key={project.title}>
-              <a
-                href={project.href}
-                target="_blank"
-                rel="noreferrer"
-                className={`group grid items-center gap-8 transition-transform duration-300 ease-out hover:-translate-y-1 motion-reduce:transform-none md:grid-cols-2 md:gap-14 ${
-                  i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
-                }`}
-              >
-                {project.image && (
-                  <div
-                    className="overflow-hidden rounded-xl border border-line bg-surface transition-colors duration-300 group-hover:border-gold-soft"
-                    style={
-                      project.imageBg
-                        ? { backgroundColor: project.imageBg }
-                        : undefined
-                    }
-                  >
+          {featuredProjects.map((project, i) => {
+            const cardClasses = `group grid items-center gap-8 transition-transform duration-300 ease-out hover:-translate-y-1 motion-reduce:transform-none md:grid-cols-2 md:gap-14 ${
+              i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
+            }`;
+            const inner = (
+              <>
+                <div
+                  className={`overflow-hidden rounded-xl border border-line bg-surface transition-colors duration-300 group-hover:border-gold-soft ${
+                    project.image ? "" : "flex aspect-[16/10] items-center justify-center"
+                  }`}
+                  style={
+                    project.imageBg
+                      ? { backgroundColor: project.imageBg }
+                      : undefined
+                  }
+                >
+                  {project.image ? (
                     <Image
                       src={project.image}
                       alt={`${project.title} screenshot`}
@@ -45,10 +43,19 @@ export function Projects() {
                           : "object-cover object-top"
                       }`}
                     />
-                  </div>
-                )}
+                  ) : (
+                    <span className="display text-3xl text-ink-muted md:text-4xl">
+                      {project.title}
+                      <span className="text-gold">.</span>
+                    </span>
+                  )}
+                </div>
                 <div>
-                  <h3 className="display text-2xl text-ink transition-colors group-hover:text-gold md:text-3xl">
+                  <h3
+                    className={`display text-2xl text-ink transition-colors md:text-3xl ${
+                      project.href ? "group-hover:text-gold" : ""
+                    }`}
+                  >
                     {project.title}
                   </h3>
                   <p className="label mt-2">{project.tagline}</p>
@@ -63,9 +70,25 @@ export function Projects() {
                     ))}
                   </ul>
                 </div>
-              </a>
-            </Reveal>
-          ))}
+              </>
+            );
+            return (
+              <Reveal key={project.title}>
+                {project.href ? (
+                  <a
+                    href={project.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={cardClasses}
+                  >
+                    {inner}
+                  </a>
+                ) : (
+                  <div className={cardClasses}>{inner}</div>
+                )}
+              </Reveal>
+            );
+          })}
         </div>
 
         <Reveal className="mt-24">
