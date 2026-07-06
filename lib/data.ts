@@ -166,6 +166,7 @@ export const featuredProjects: Project[] = [
     tagline: "Ride-sharing for Sri Lankan commuters",
     description:
       "The newest venture, currently in validation: a carpooling platform for Sri Lanka, already past 25 early signups before a line of product code — proving the demand first, building second.",
+    href: "https://forms.gle/QSRWYrJXM2BLbDqcA",
     chips: ["In validation"],
     image: ryderrrShot,
     imageBg: "#FFCC01",
