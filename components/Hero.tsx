@@ -1,6 +1,8 @@
 import type { CSSProperties } from "react";
+import Image from "next/image";
 import { Magnetic } from "@/components/Magnetic";
 import { hero, siteConfig } from "@/lib/data";
+import portrait from "@/public/images/image_me.jpeg";
 
 const delay = (s: string) => ({ "--anim-delay": s }) as CSSProperties;
 
@@ -41,9 +43,21 @@ export function Hero() {
   return (
     <section id="top" className="flex min-h-svh flex-col justify-center px-6">
       <div className="mx-auto w-full max-w-6xl">
-        <p className="label anim-fade-up mb-6" style={delay("0.1s")}>
-          Full-Stack Developer · {siteConfig.location}
-        </p>
+        <div
+          className="anim-fade-up mb-6 flex items-center gap-4"
+          style={delay("0.1s")}
+        >
+          <Image
+            src={portrait}
+            alt="Musthafa Altaf"
+            sizes="56px"
+            priority
+            className="h-14 w-14 rounded-full border border-line object-cover"
+          />
+          <p className="label">
+            Full-Stack Developer · {siteConfig.location}
+          </p>
+        </div>
 
         <h1
           className="display text-[clamp(3rem,8vw,7.5rem)] text-ink"
