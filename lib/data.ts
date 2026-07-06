@@ -4,6 +4,7 @@ import petvilleShot from "@/public/images/projects/petville_project.png";
 import authHeroShot from "@/public/images/projects/auth-hero_project.webp";
 import hitgirlShot from "@/public/images/projects/hitgirl_project.png";
 import ryderrrShot from "@/public/images/projects/carpool_project.jpg";
+import bmbfaShot from "@/public/images/projects/bmbfa_project.png";
 
 export const siteConfig = {
   name: "Musthafa Altaf",
@@ -152,13 +153,15 @@ export const featuredProjects: Project[] = [
     image: hitgirlShot,
     imageFit: "contain",
   },
-  // Logo to come from Musthafa
   {
     title: "BMBFA",
-    tagline: "Community, in your pocket",
+    tagline: "A community app for the Black Mothers' Breastfeeding Association",
     description:
       "A React Native community app built at Serendip — gatherings, member profiles and a redesigned onboarding flow on a .NET backend. Grew the platform from near-zero to 50+ monthly active users, 20+ new signups a month and 100+ club members.",
     chips: ["React Native", ".NET"],
+    image: bmbfaShot,
+    imageBg: "#FFFFFF",
+    imageFit: "contain",
   },
   // Placeholder copy — final details to come from Musthafa
   {
