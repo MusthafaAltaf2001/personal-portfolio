@@ -152,6 +152,14 @@ export const featuredProjects: Project[] = [
     image: hitgirlShot,
     imageFit: "contain",
   },
+  // Logo to come from Musthafa
+  {
+    title: "BMBFA",
+    tagline: "Community, in your pocket",
+    description:
+      "A React Native community app built at Serendip — gatherings, member profiles and a redesigned onboarding flow on a .NET backend. Grew the platform from near-zero to 50+ monthly active users, 20+ new signups a month and 100+ club members.",
+    chips: ["React Native", ".NET"],
+  },
   // Placeholder copy — final details to come from Musthafa
   {
     title: "Ryderrr",
