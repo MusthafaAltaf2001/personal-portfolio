@@ -158,6 +158,7 @@ export const featuredProjects: Project[] = [
     tagline: "A community app for the Black Mothers' Breastfeeding Association",
     description:
       "A React Native community app built at Serendip — gatherings, member profiles and a redesigned onboarding flow on a .NET backend. Grew the platform from near-zero to 50+ monthly active users, 20+ new signups a month and 100+ club members.",
+    href: "https://www.bmbfa.org/",
     chips: ["React Native", ".NET"],
     image: bmbfaShot,
     imageBg: "#FFFFFF",

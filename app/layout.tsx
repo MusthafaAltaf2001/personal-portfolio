@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Archivo, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { CursorGlow } from "@/components/CursorGlow";
 import { MotionProvider } from "@/components/MotionProvider";
+import { NightSky } from "@/components/NightSky";
 import { siteConfig } from "@/lib/data";
 import "./globals.css";
 
@@ -41,6 +43,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${archivo.variable} ${geistMono.variable}`}>
       <body className="font-sans">
+        <NightSky />
+        <CursorGlow />
         <MotionProvider>{children}</MotionProvider>
       </body>
       <GoogleAnalytics gaId={siteConfig.gaId} />

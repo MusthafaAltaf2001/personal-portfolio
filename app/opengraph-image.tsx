@@ -21,7 +21,7 @@ export default async function OpengraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          padding: "80px",
+          padding: "90px",
           backgroundColor: "#080807",
           color: "#F4F3EF",
         }}

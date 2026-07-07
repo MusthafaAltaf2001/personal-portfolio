@@ -38,6 +38,8 @@ Type scale (desktop → mobile): hero statement `clamp(3rem, 8vw, 7.5rem)`; sect
   - **Hover lifts** — project cards rise 4px with a gold hairline fading in; screenshot inside pans slightly.
   - **Scroll reveals** — sections fade/rise 16px once, 250–400ms ease-out; no parallax, no scroll-jacking.
   - **Character warmth** — the gold period in the hero pulses gently once on load; link underlines draw in on hover; the theme is "one wink per section, not a carnival."
+  - **Cursor glow** — a site-wide ember spotlight (gold core fading through amber, 600px radius) follows the mouse above page surfaces; pointer-events-none, fades in on first mouse move, absent on touch devices. Ambient light doesn't count against the gold-sparsity rule.
+  - **Night sky** — a fixed canvas starfield behind all content: sparse warm-white stars (~6% gold), gentle twinkle, and a single gold shooting star at a random moment in the first 10 seconds of a visit. Reduced motion: static stars, no meteor.
 - Library: `motion` (Framer Motion successor), already React-19 compatible.
 
 ## 2. Page structure (single long-scroll page)
