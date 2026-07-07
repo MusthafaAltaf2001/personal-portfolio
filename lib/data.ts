@@ -207,7 +207,7 @@ export const otherProjects: Project[] = [
 
 export const now = {
   paragraph:
-    "Right now I'm deep in agentic AI at Serendip — retrieval pipelines, tool-using LLMs, and the unglamorous plumbing that makes them reliable. Off the clock I'm usually learning something new or plotting the next side project.",
+    "Right now I'm deep in agentic AI at Serendip — retrieval pipelines, tool-using LLMs, and the unglamorous plumbing that makes them reliable. Off the clock I'm building Ryderrr, a carpooling platform for Sri Lankan commuters that's collecting early signups while I validate the idea.",
 };
 
 export interface Social {
