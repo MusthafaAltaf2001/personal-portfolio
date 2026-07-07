@@ -126,7 +126,7 @@ export const featuredProjects: Project[] = [
     tagline: "Pet care, affordable and convenient",
     description:
       "A B2C/B2B marketplace where pet owners find products and services, and pet businesses reach customers. Grew to 500+ active users within three months of launch; I built the entire merchant dashboard — inventory, appointments, sales-funnel analytics, payments and courier dispatch.",
-    href: "https://petville.co/",
+    href: "https://www.linkedin.com/company/petvilleglobal/",
     chips: ["React", "Node.js", "Recharts", "Google Cloud"],
     image: petvilleShot,
     imageBg: "#EFE9E7",
